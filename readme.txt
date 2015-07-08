@@ -11,6 +11,9 @@
    Less
    base库  est 官网：http://ecomfe.github.io/est/
 
+3.安装依赖
+	npm install
+
 构建说明(当前目录下执行)：
 	gulp watch  --监听文件变化自动编译
 	gulp build  --生产发布编译
