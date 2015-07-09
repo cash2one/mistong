@@ -1,0 +1,15 @@
+{
+  "name": "lie",
+  "version": "2.9.1",
+  "homepage": "https://github.com/calvinmetcalf/lie",
+  "_release": "2.9.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.9.1",
+    "commit": "e05717c10232b633c51c38eb6e00177cc736734f"
+  },
+  "_source": "git://github.com/calvinmetcalf/lie.git",
+  "_target": "~2.9.1",
+  "_originalSource": "lie",
+  "_direct": true
+}
