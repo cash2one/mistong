@@ -235,3 +235,4 @@ local.properties
 
 # 项目本身
 dist/
+# 项目跟进后，具体需要忽略的项目文件夹
