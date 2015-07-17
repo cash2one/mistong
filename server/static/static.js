@@ -1,7 +1,7 @@
 var path = require("path"),
     fs = require('fs'),
     mime = require("./mime").types;
-module.exports = function(request,response,cab){
+module.exports = function(request, response, cab) {
     // body...
     var pathname = url.parse(request.url).pathname;
     var realPath = "assets" + pathname;
@@ -10,7 +10,6 @@ module.exports = function(request,response,cab){
         var ext = path.extname(realPath);
         ext = ext ? ext.slice(1) : 'unknown';
         var contentType = mime[ext] || "text/plain";
-
         path.exists(realPath, function(exists) {
             if (!exists) {
                 response.writeHead(404, {
