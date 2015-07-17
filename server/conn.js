@@ -45,11 +45,8 @@ var data = {
     ]
 };
 
-
-
 app.use(function(req,res){
 	console.log(req.originalUrl);
-
 });	
 
 app.use('/index',function(req, res) {
