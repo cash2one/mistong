@@ -1,0 +1,41 @@
+{@include file://./layout/header.tmpl }
+<div>演示:</div>
+<button class="hello" style="background-color:#ddd;border-radius:0;color:red; ">前端button</button>
+<button class="hello" style="background-color:#ddd;border-radius:0;color:#80ff3e; ">前端button</button>
+<button class="hello" style="background-color:#ddd;border-radius:0;color:#2d51ff; ">前端button</button>
+<button class="hello" style="background-color:#ddd;border-radius:0;color:#f6fcff; ">前端button</button>
+<div>代码:</div>
+<pre><code class="html">
+    &lt;button class="hello" style="background-color:#ddd;border-radius:0;color:red; ">前端button&lt;/button>
+</code></pre>
+
+<button class="hello" id="asdfasdf" style="background-color:#ddd;border-radius:0;color:red; ">2</button>
+<ul>
+    {@each list as it,index}
+    <li>${it.name} (index: ${index})</li>
+    {@/each}
+    {@each blah as it}
+    <li>
+        num: ${it.num} <br />
+        {@if it.num==3}
+        {@each it.inner as it2}
+        ${it2.time} <br />
+        {@/each}
+        {@/if}
+    </li>
+    {@/each}
+</ul>
+<pre>
+<code class="html">
+    &lt;h1>这里是h1标签&lt;/h1>
+</code>
+</pre>
+常用jquery模板
+<pre>
+<code class="javascript">
+$(function(){
+    //TODO your code
+});
+</code>
+</pre>
+{@include file://./layout/footer.tmpl }

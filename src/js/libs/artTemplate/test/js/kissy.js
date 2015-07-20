@@ -5618,7 +5618,7 @@ KISSY.add('dom/style', function(S, DOM, UA, undefined) {
         },
 
         /**
-         * (Gets computed style) or (sets styles) on the matches elements.
+         * (Gets computed style) or (sets highlight) on the matches elements.
          */
         css: function(selector, name, val) {
             // suports hash

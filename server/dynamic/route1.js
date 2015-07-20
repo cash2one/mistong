@@ -124,8 +124,5 @@ Router.prototype.set = function RouterSet(url, silent) {
     }
     return found;
 };
-if (module) {
-    module.exports = Router;
-} else {
-    window.Router = Router;
-}
+
+module.exports = Router;
