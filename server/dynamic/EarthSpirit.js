@@ -64,7 +64,7 @@ module.exports = function(tplPath, options, fn) {
         str = juicer(str, options);
         str = includeFileDetect(str);
         var result=str.match(/<([code]+)(\s*\w*?\s*=\s*".+?")*(\s*?>[\s\S]*?<\/\1>|\s*\/>)/i );
-        console.log(result[0]);
+        //console.log(result[0]);
         fn(str);
     });
 };

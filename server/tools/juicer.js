@@ -8,6 +8,9 @@
     Blog: http://benben.cc
     Licence: MIT License
     Version: 0.6.9-stable
+ *  
+ * it already changed by clive.chen
+ * 
 */
 (function() {
     // This is the main function for not only compiling but also rendering.
@@ -122,7 +125,8 @@
         noneencodeOpen: '\\$\\${',
         noneencodeClose: '}',
         commentOpen: '\\{#',
-        commentClose: '\\}'
+        commentClose: '\\}',
+        escapeHTMlClose: '}'
     };
     juicer.options = {
         cache: true,
@@ -150,6 +154,8 @@
         var helperRegisterStart = juicer.tags.operationOpen + 'helper\\s*([^}]*?)\\s*' + juicer.tags.operationClose;
         var helperRegisterBody = '([\\s\\S]*?)';
         var helperRegisterEnd = juicer.tags.operationOpen + '\\/helper' + juicer.tags.operationClose;
+		//添加额外的指令
+		var escapeHTML = juicer.tags.operationOpen + 'escape[\\s\\S]*?/@escape' + juicer.tags.escapeHTMlClose;
         juicer.settings.forstart = new RegExp(forstart, 'igm');
         juicer.settings.forend = new RegExp(forend, 'igm');
         juicer.settings.ifstart = new RegExp(ifstart, 'igm');
@@ -159,9 +165,11 @@
         juicer.settings.interpolate = new RegExp(interpolate, 'igm');
         juicer.settings.noneencode = new RegExp(noneencode, 'igm');
         juicer.settings.inlinecomment = new RegExp(inlinecomment, 'igm');
-        juicer.settings.rangestart = new RegExp(rangestart, 'igm');
+		juicer.settings.rangestart = new RegExp(rangestart, 'igm');
         juicer.settings.include = new RegExp(include, 'igm');
         juicer.settings.helperRegister = new RegExp(helperRegisterStart + helperRegisterBody + helperRegisterEnd, 'igm');
+        //添加额外的指令
+        juicer.settings.escapeHTML=new RegExp(escapeHTML,'igm');
     };
     juicer.tagInit();
     // Using this method to set the options by given conf-name and conf-value,
@@ -217,7 +225,7 @@
     juicer.template = function(options) {
         var that = this;
         this.options = options;
-        this.__interpolate = function(_name, _escape, options) {
+		this.__interpolate = function (_name, _escape, options) {
             var _define = _name.split('|'),
                 _fn = _define[0] || '',
                 _cluster;
@@ -227,6 +235,9 @@
                 _fn = '_method.' + _cluster.shift() + '.call({}, ' + [_name].concat(_cluster) + ')';
             }
             return '<%= ' + (_escape ? '_method.__escapehtml.escaping' : '') + '(' + (!options || options.detection !== false ? '_method.__escapehtml.detection' : '') + '(' + _fn + ')' + ')' + ' %>';
+        };
+        this.__clive=function(_str,_escape){
+            // return '<%= ' + (_escape ? '_method.__escapehtml.escaping' : '') + ')' + ')' + ' %>';
         };
         this.__removeShell = function(tpl, options) {
             var _counter = 0;
@@ -267,6 +278,14 @@
                 .replace(juicer.settings.interpolate, function($, _name) {
                     return that.__interpolate(_name, true, options);
                 })
+                // use the escapeHTML 主动转义
+                .replace(juicer.settings.escapeHTML, function ($) {
+				//console.log({@escape\s*([^}]*?)\s*,\s*([^}]*?)});
+				//return that.__interpolate(_name, true, options);
+					// console.log("添加指令的正则匹配:" + $);
+                    return that.__interpolate($,true,options);
+                })
+
                 // clean up comments
                 .replace(juicer.settings.inlinecomment, '')
                 // range expression
