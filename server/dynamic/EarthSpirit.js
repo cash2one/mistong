@@ -1,9 +1,9 @@
 /**
- * 大地之灵,模板的附加方法
+ * 澶у湴涔嬬伒
  * @type {juicer|exports|module.exports}
  *
  */
-var juicer = require('juicer');
+var juicer = require('../tools/juicer');
 var fs = require('fs');
 var path = require('path');
 // disabled auto strip

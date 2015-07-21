@@ -4,11 +4,13 @@
 <button class="hello" style="background-color:#ddd;border-radius:0;color:#80ff3e; ">前端button</button>
 <button class="hello" style="background-color:#ddd;border-radius:0;color:#2d51ff; ">前端button</button>
 <button class="hello" style="background-color:#ddd;border-radius:0;color:#f6fcff; ">前端button</button>
+<button class="hello" style="background-color:#ddd;border-radius:0;color:#ddd; ">前端button</button>
 <div>代码:</div>
 <pre><code class="html">
     &lt;button class="hello" style="background-color:#ddd;border-radius:0;color:red; ">前端button&lt;/button>
-</code></pre>
+    &lt;button class="hello" style="background-color:#ddd;border-radius:0;color:#ddd; ">前端button &lt;/button>
 
+</code></pre>
 <button class="hello" id="asdfasdf" style="background-color:#ddd;border-radius:0;color:red; ">2</button>
 <ul>
     {@each list as it,index}
@@ -35,6 +37,22 @@
 <code class="javascript">
 $(function(){
     //TODO your code
+    
+        // 将HTML转义为实体
+    module.exports = function escape(html) {
+        if (typeof html !== 'string') return ''
+        return html.replace(entityReg.escape, function (match) {
+            return entityMap.escape[match]
+        })
+    }
+    // 将实体转回为HTML
+    module.exports = function unescape(str) {
+        if (typeof str !== 'string') return ''
+        return str.replace(entityReg.unescape, function (match) {
+            return entityMap.unescape[match]
+        })
+    }
+        
 });
 </code>
 </pre>
