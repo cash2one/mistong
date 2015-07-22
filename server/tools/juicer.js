@@ -236,9 +236,7 @@
             }
             return '<%= ' + (_escape ? '_method.__escapehtml.escaping' : '') + '(' + (!options || options.detection !== false ? '_method.__escapehtml.detection' : '') + '(' + _fn + ')' + ')' + ' %>';
         };
-        this.__clive=function(_str,_escape){
-            // return '<%= ' + (_escape ? '_method.__escapehtml.escaping' : '') + ')' + ')' + ' %>';
-        };
+
         this.__removeShell = function(tpl, options) {
             var _counter = 0;
             tpl = tpl
@@ -280,10 +278,10 @@
                 })
                 // use the escapeHTML 主动转义
                 .replace(juicer.settings.escapeHTML, function ($) {
-				//console.log({@escape\s*([^}]*?)\s*,\s*([^}]*?)});
-				//return that.__interpolate(_name, true, options);
-					// console.log("添加指令的正则匹配:" + $);
-                    return that.__interpolate($,true,options);
+                    //取出自定义标签
+                    $=$.replace('{@escape','');
+                    $=$.replace('/@escape}','');
+                    return __escapehtml.escaping($);
                 })
 
                 // clean up comments

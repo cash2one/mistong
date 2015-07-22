@@ -1,4 +1,31 @@
 {@include file://./layout/header.tmpl }
+
+<div id="container">
+    <div id="nav">
+        <ul>
+            <li><a href="#"><span>Dashboard</span></a></li>
+            <li><a href="#"><span>Posts</span></a></li>
+            <li class="dropdown"><a href="#"><span>Users</span></a>
+                <ul>
+                    <li><a href="#"><span>Joshua Hibbert</span></a></li>
+                    <li><a href="#"><span>Kyle Bragger</span></a></li>
+                    <li><a href="#"><span>Jack Rugile</span></a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Settings</span></a>
+                <ul>
+                    <li><a href="#"><span>General</span></a></li>
+                    <li><a href="#"><span>SEO</span></a></li>
+                    <li><a href="#"><span>Style</span></a></li>
+                    <li><a href="#"><span>Plugins</span></a></li>
+                    <li><a href="#"><span>Security</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span>View Site</span></a></li>
+        </ul>
+    </div>
+</div>​
+
 <div>演示:</div>
 <button class="hello" style="background-color:#ddd;border-radius:0;color:red; ">前端button</button>
 <button class="hello" style="background-color:#ddd;border-radius:0;color:#80ff3e; ">前端button</button>
@@ -29,16 +56,17 @@
 </ul>
 <pre>
 <code class="html">
-    &lt;h1>这里是h1标签&lt;/h1>
+{@escape
+   <h1>这里是h1标签</h1>
+ /@escape}
 </code>
 </pre>
 常用jquery模板
 <pre>
 <code class="javascript">
-{@escape
+
 $(function(){
     //TODO your code
-    
         // 将HTML转义为实体
     module.exports = function escape(html) {
         if (typeof html !== 'string') return ''
@@ -54,7 +82,7 @@ $(function(){
         })
     }
 });
-    /@escape}
+   
 </code>
 </pre>
 {@include file://./layout/footer.tmpl }
