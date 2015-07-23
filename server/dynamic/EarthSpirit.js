@@ -3,6 +3,10 @@
  * @type {juicer|exports|module.exports}
  *
  */
+
+//TODO 模板引擎重构
+//TODO 支持markdown的模板格式
+//
 var juicer = require('../tools/juicer');
 var fs = require('fs');
 var path = require('path');

@@ -29,40 +29,5 @@ router.attack = function (urltarget, req, res) {
     }
 }
 
-router.reg("/index", function (req, res) {
-    var data = {
-        list: [{
-            name: ' guokai',
-            show: true
-        }, {
-            name: ' benben',
-            show: false
-        }, {
-            name: ' dierbaby',
-            show: true
-        }],
-        blah: [{
-            num: 1
-        }, {
-            num: 2
-        }, {
-            num: 3,
-            inner: [{
-                'time': '15:00'
-            }, {
-                'time': '16:00'
-            }, {
-                'time': '17:00'
-            }, {
-                'time': '18:00'
-            }]
-        }, {
-            num: 4
-        }]
-    };
-    courlene("./other/template/index.tmpl", data, function (star) {
-        res.write(star);
-        res.end();
-    })
-});
+
 module.exports = router;

@@ -1,5 +1,6 @@
 html, body {
-    font: 100% helvetica, arial, sans-serif;
+    font: 12px/1.5 "pt sans",tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+    -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;
 }
@@ -48,6 +49,19 @@ h2 {
     font-weight: normal;
     margin: 20px 0 0 0;
 }
+h3,h4{
+    margin: 0;
+    padding: 0;
+}
+h4{
+    margin-top: 20px;
+    font-size: 22px;
+}
+p{
+    margin: 0;
+    padding: 5px 0 ;
+    font-size: 14px;
+}
 
 a {
     color: #111;
@@ -62,11 +76,13 @@ a {
 a:hover {
     color: #555;
 }
-
+ul{
+    margin: 0;
+    padding: 0 15px;
+    font-size: 14px;
+}
 
 /*============================*/
-
-
 /* Main Navigation
 /*============================*/
 
