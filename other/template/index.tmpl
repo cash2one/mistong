@@ -1,70 +1,32 @@
 {@include file://./layout/header.tmpl }
-
 <div id="container">
     <div id="nav">
         <ul>
-            <li><a href="#"><span>Dashboard</span></a></li>
-            <li><a href="#"><span>Posts</span></a></li>
-            <li class="dropdown"><a href="#"><span>Users</span></a>
+            <li><a href="#"><span>首页</span></a></li>
+            <li><a href="#"><span>控件</span></a></li>
+            <li class="dropdown"><a href="#"><span>持续集成</span></a>
                 <ul>
-                    <li><a href="#"><span>Joshua Hibbert</span></a></li>
-                    <li><a href="#"><span>Kyle Bragger</span></a></li>
-                    <li><a href="#"><span>Jack Rugile</span></a></li>
+                    <li><a href="#"><span>开发</span></a></li>
+                    <li><a href="#"><span>发布</span></a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="#"><span>Settings</span></a>
+            <li class="dropdown"><a href="#"><span>框架</span></a>
                 <ul>
-                    <li><a href="#"><span>General</span></a></li>
-                    <li><a href="#"><span>SEO</span></a></li>
-                    <li><a href="#"><span>Style</span></a></li>
-                    <li><a href="#"><span>Plugins</span></a></li>
-                    <li><a href="#"><span>Security</span></a></li>
+                    <li><a href="#"><span>通用</span></a></li>
+                    <li><a href="#"><span>SEO优化</span></a></li>
+                    <li><a href="#"><span>样式表</span></a></li>
+                    <li><a href="#"><span>插件</span></a></li>
+                    <li><a href="#"><span>安全</span></a></li>
                 </ul>
             </li>
-            <li><a href="#"><span>View Site</span></a></li>
+            <li><a href="#"><span>代码片段</span></a></li>
         </ul>
     </div>
 </div>​
-
-<div>演示:</div>
-<button class="hello" style="background-color:#ddd;border-radius:0;color:red; ">前端button</button>
-<button class="hello" style="background-color:#ddd;border-radius:0;color:#80ff3e; ">前端button</button>
-<button class="hello" style="background-color:#ddd;border-radius:0;color:#2d51ff; ">前端button</button>
-<button class="hello" style="background-color:#ddd;border-radius:0;color:#f6fcff; ">前端button</button>
-<button class="hello" style="background-color:#ddd;border-radius:0;color:#ddd; ">前端button</button>
-<div>代码:</div>
-<pre><code class="html">
-    &lt;button class="hello" style="background-color:#ddd;border-radius:0;color:red; ">前端button&lt;/button>
-    &lt;button class="hello" style="background-color:#ddd;border-radius:0;color:#ddd; ">前端button &lt;/button>
-
-</code></pre>
-<button class="hello" id="asdfasdf" style="background-color:#ddd;border-radius:0;color:red; ">2</button>
-<ul>
-    {@each list as it,index}
-    <li>${it.name} (index: ${index})</li>
-    {@/each}
-    {@each blah as it}
-    <li>
-        num: ${it.num} <br />
-        {@if it.num==3}
-        {@each it.inner as it2}
-        ${it2.time} <br />
-        {@/each}
-        {@/if}
-    </li>
-    {@/each}
-</ul>
-<pre>
-<code class="html">
-{@escape
-   <h1>这里是h1标签</h1>
- /@escape}
-</code>
-</pre>
-常用jquery模板
-<pre>
-<code class="javascript">
-
+<div class="cont-wraper">
+    <h4>常用jquery模板</h4>
+    <pre>
+    <code class="javascript">
 $(function(){
     //TODO your code
         // 将HTML转义为实体
@@ -82,7 +44,8 @@ $(function(){
         })
     }
 });
-   
-</code>
-</pre>
+    </code>
+    </pre>
+</div>
+
 {@include file://./layout/footer.tmpl }
