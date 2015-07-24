@@ -1,5 +1,5 @@
 html, body {
-    font: 12px/1.5 "pt sans",tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+    font-family: arial, '宋体', 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti !important;
     -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;

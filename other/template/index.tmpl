@@ -1,61 +1,45 @@
 {@include file://./layout/header.tmpl }
-<div id="container">
-    <div id="nav">
-        <ul>
-            <li><a href="#"><span>首页</span></a></li>
-            <li><a href="#"><span>控件</span></a></li>
-            <li class="dropdown"><a href="#"><span>持续集成</span></a>
-                <ul>
-                    <li><a href="#"><span>开发</span></a></li>
-                    <li><a href="#"><span>发布</span></a></li>
-                </ul>
-            </li>
-            <li class="dropdown"><a href="#"><span>框架</span></a>
-                <ul>
-                    <li><a href="#"><span>通用</span></a></li>
-                    <li><a href="#"><span>SEO优化</span></a></li>
-                    <li><a href="#"><span>样式表</span></a></li>
-                    <li><a href="#"><span>插件</span></a></li>
-                    <li><a href="#"><span>安全</span></a></li>
-                </ul>
-            </li>
-            <li><a href="#"><span>代码片段</span></a></li>
-        </ul>
-    </div>
-</div>​
-<div class="cont-wraper">
-    <h4>TI前端库目的</h4>
-    <p>
-        建立一套相对完善的前端体系,构建前端的生态环境系统.
-    </p>
-    <h4>TI已经支持环境</h4>
-    <ul>
-        <li>基于gulp的构建方式</li>
-        <li>基于less的css样式构造方案</li>
-        <li>支持多样化的前端javascript框架</li>
-    </ul>
-    <h4>安装方式:</h4>
-    <ul>
-        <li>下载:<a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a></li>
-        <li>下载 git 版本工具 <a target="_blank" href="http://msysgit.github.io">http://msysgit.github.io</a></li>
-        <li>命令行 下载代码:git clone https://github.com/xccvista/mistong.git</li>
-        <li>命令行 输入   npm install gulp -g</li>
-        <li>命令行 输入   npm install </li>
-        <li>命令行 输入   git pull   //更新代码</li>
-    </ul>
-    <h4>使用方式:</h4>
-    <ul>
-        <li>执行 gulp build    //获取编译后的代码</li>
-        <li>执行 gulp watch    //进入开发模式,自动编译less,js,typescript,优化图片等</li>
-    </ul>
-    <h4>目录说明:</h4>
-    <ul>
-        <li>dist   最终发布目录</li>
-        <li>src    源码目录</li>
-        <li>other  前端服务代码类目</li>
-        <li>gulpfile.js   构建脚本</li>
-        <li>package.json   nodejs包依赖声明</li>
-    </ul>
-</div>
+<h4>TI前端库目的</h4>
+<p>
+建立一套相对完善的前端体系,构建前端的生态环境系统.
+</p>
+<h4>TI已经支持环境</h4>
+<ul>
+    <li>基于gulp的构建方式</li>
+    <li>基于less的css样式构造方案</li>
+    <li>支持多样化的前端javascript框架</li>
+</ul>
+<h4>安装方式:</h4>
+<ul>
+    <li>下载:<a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a></li>
+    <li>下载 git 版本工具 <a target="_blank" href="http://msysgit.github.io">http://msysgit.github.io</a></li>
+    <li>命令行 下载代码:git clone https://github.com/xccvista/mistong.git</li>
+    <li>命令行 输入   npm install gulp -g</li>
+    <li>命令行 输入   npm install </li>
+    <li>命令行 输入   git pull   //更新代码</li>
+</ul>
+<h4>使用方式:</h4>
+<ul>
+    <li>执行 gulp build    //获取编译后的代码</li>
+    <li>执行 gulp watch    //进入开发模式,自动编译less,js,typescript,优化图片等</li>
+    <li>启动web服务  命令行  node server/main.js</li>
+    
+</ul>
+<h4>开发web服务说明:</h4>
+<ul>
+    <li>安装开发命令   npm install node-dev -g</li>
+    <li>启动web服务  node server/main.js</li>
+    <li>打开服务  <a href="http://localhost:3000/index" target="_blank">http://localhost:3000/index</a></li>
+</ul>
+
+<h4>目录说明:</h4>
+<ul>
+    <li>dist   最终发布目录</li>
+    <li>src    源码目录</li>
+    <li>other  前端服务代码类目</li>
+    <li>gulpfile.js   构建脚本</li>
+    <li>package.json   nodejs包依赖声明</li>
+</ul>
+
 
 {@include file://./layout/footer.tmpl }

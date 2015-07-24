@@ -21,3 +21,26 @@ router.reg("/index", function (req, res) {
         res.end();
     })
 });
+
+
+router.reg("/codes", function (req, res) {
+    courlene("./other/template/codesnipet.tmpl", {}, function (star) {
+        res.write(star);
+        res.end();
+    })
+});
+
+router.reg("/compents", function (req, res) {
+    courlene("./other/template/compents.tmpl", {}, function (star) {
+        res.write(star);
+        res.end();
+    })
+});
+
+router.reg("/framework", function (req, res) {
+    courlene("./other/template/framework.tmpl", {}, function (star) {
+        res.write(star);
+        res.end();
+    })
+});
+

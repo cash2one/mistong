@@ -1,0 +1,39 @@
+{@include file://./layout/header.tmpl }
+<h4>jquery 插件demo</h4>
+<pre>
+	<code class="javascript">
+		
+
+		
+// 1.
+MyClass.prototype.myMethod = function() {
+  return 42;
+}  // 这个缺德的没写分号
+
+(function() {
+  // 匿名函数的执行
+})();
+
+
+var x = {
+  'i': 1,
+  'j': 2
+}  // 这个天杀的也没写分号
+
+// 2. 在IE和FF的某些版本里试试（译者表示没试出来）
+// 老子知道你永远也不会写这样2的代码的，但它真的会因为木有写分号而报错噢
+[normalVersion, ffVersion][isIE]();
+
+
+var THINGS_TO_EAT = [apples, oysters, sprayOnCheese]  // 这个屌丝木有写分号
+
+// 3. conditional execution a la bash
+-1 == resultOfOperation() || die();
+
+
+	</code>
+</pre>
+
+
+
+{@include file://./layout/footer.tmpl }
