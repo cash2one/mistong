@@ -58,6 +58,49 @@ $(function () {
 	</code>
 </pre>
 
+<h4>javascript常用函数式类写法1</h4>
+<pre>
+    <code class="javascript">
+//创建对象
+function clz(){
+    //构造器
+}
+clz.prototype.abc={
+  //属性
+}; 
+//实例化
+var item=new clz();
+    </code>
+</pre>
+<h4>javascript常用json类写法2</h4>
+<pre>
+    <code class="javascript">
+//创建静态式类对象
+var abc={
+    a:function(){},
+    b:function(){},
+    c:"abc",
+    d:123
+}
+//无需实例化
+abc.a();
+abc.b();
+abc.c==="abc";
+abc.d>100;
+    </code>
+</pre>
 
-
+<h4>js 闭包</h4>
+<pre>
+<code class="javascript">
+//闭包是创建独立的作用域,var级变量不对外部变量污染,但继承父级环境中的变量
+var a='abc';
+(function(){ 
+//独立作用域
+    a==="abc";
+    var b="cba"; 
+})(); 
+b===undefined;
+</code>
+</pre>
 {@include file://./layout/footer.tmpl }
