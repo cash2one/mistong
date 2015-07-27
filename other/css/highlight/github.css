@@ -3,11 +3,16 @@
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 */
-
+pre{
+  padding: 0;
+  font-family: "Source Code Pro";
+}
 .hljs {
   display: block;
+  font-size: 13px;
+  font-family: "Source Code Pro";
   overflow-x: auto;
-  padding: 0.5em;
+  padding:0 0.5em;
   color: #333;
   background: #f8f8f8;
   -webkit-text-size-adjust: none;
