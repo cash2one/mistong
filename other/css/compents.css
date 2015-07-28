@@ -78,11 +78,13 @@
     -webkit-box-shadow: rgba(255,255,255,0.2) 0px 1px 2px;
      -khtml-box-shadow: rgba(255,255,255,0.2) 0px 1px 2px;
        -moz-box-shadow: rgba(255,255,255,0.2) 0px 1px 2px;
+        -ms-box-shadow: rgba(255,255,255,0.2) 0px 1px 2px;
          -o-box-shadow: rgba(255,255,255,0.2) 0px 1px 2px;
             box-shadow: rgba(255,255,255,0.2) 0px 1px 2px;
     -webkit-transition: all 0.3s ease-in-out;
      -khtml-transition: all 0.3s ease-in-out;
        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
          -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
 }
@@ -96,8 +98,85 @@
 .all .bll .backc1:hover{ 
 	-webkit-border-radius:50px;
 	-moz-border-radius:50px;
+    -ms-border-radius:50px;
 	border-radius: 50px;
 }
+.all .bll .backc6:hover{ 
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    border-radius: 50px;
+}
+.all .bll .backc7:hover{
+    box-shadow:2px 2px 2px #999;
+    -webkit-box-shadow:2px 2px 2px #999;
+    -moz-box-shadow:2px 2px 2px #999;
+    -ms-box-shadow:2px 2px 2px #999;
+}
+.all .bll .backc8{
+    transition:width 1s, height 1s;
+    -webkit-transition:width 1s, height 1s, -webkit-transform 1s;
+    -moz-transition:width 1s, height 1s, -moz-transform 1s;
+    -o-transition:width 1s, height 1s, -o-transform 1s;
+    -ms-transition:width 1s, height 1s, -ms-transform 1s;
+}
+.all .bll .backc8:hover{
+    transform:rotateY(360deg);
+    -webkit-transform:rotateY(360deg);
+    -moz-transform:rotateY(360deg);
+    -ms-transform:rotateY(360deg);
+    -o-transform:rotateY(360deg);
+}
+.all .bll .backc9{
+    transition:width 1s, height 1s;
+    -webkit-transition:width 1s, height 1s, -webkit-transform 1s;
+    -moz-transition:width 1s, height 1s, -moz-transform 1s;
+    -o-transition:width 1s, height 1s, -o-transform 1s;
+    -ms-transition:width 1s, height 1s, -ms-transform 1s;
+}
+.all .bll .backc9:hover{
+    transform:rotateX(360deg);
+    -webkit-transform:rotateX(360deg);
+    -moz-transform:rotateX(360deg);
+    -ms-transform:rotateX(360deg);
+    transform:rotateX(360deg);
+}
+.all .bll .backc10{
+    transition:width 1s, height 1s;
+    -webkit-transition:width 1s, height 1s, -webkit-transform 1s;
+    -moz-transition:width 1s, height 1s, -moz-transform 1s;
+    -ms-transition:width 1s, height 1s, -ms-transform 1s;
+    -o-transition:width 1s, height 1s, -o-transform 1s;
+}
+.all .bll .backc10:hover{
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+}
+.all .bll .backc11
+        {
+            transition:width 0.5s, height 0.5s;
+            -moz-transition:width 0.5s, height 0.5s, -moz-transform 0.5s; /* Firefox 4 */
+            -webkit-transition:width 0.5s, height 0.5s, -webkit-transform 0.5s; /* Safari and Chrome */
+            -o-transition:width 0.5s, height 0.5s, -o-transform 0.5s; /* Opera */
+            -ms-transition:width 1s, height 1s, -ms-transform 1s;
+        }
+        .all .bll .backc11:hover
+        {
+            width:60px;
+            height:60px;
+            line-height:60px;
+            margin-top:5px;
+            -ms-transform:rotate(360deg);
+            transform:rotate(360deg);
+            -moz-transform:rotate(360deg); /* Firefox 4 */
+            -webkit-transform:rotate(360deg); /* Safari and Chrome */
+            -o-transform:rotate(360deg); /* Opera */
+            
+        }
+
 .bll a{text-decoration:none;}
 .backc1{ background-color:#66cccc;}
 .backc2{ background-color:#cc6633;}
