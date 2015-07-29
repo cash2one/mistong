@@ -6,7 +6,6 @@
     "clive.chen <fedora1989@gmail.com>"
   ],
   "dependencies": {
-    "get-size": "~1.2.2",
     "eventEmitter": "~4.2.11",
     "jquery": "1.11.3",
     "artTemplate": "~3.0.1",
