@@ -6,10 +6,8 @@ var path = require("path"),
 var log4js = require('log4js');
 var logger = log4js.getLogger();
 var staticpath={
-    "other":"other",
     "src":'src',
-    "dist":'dist',
-    "common":'common'
+    "dist":'dist'
 }
 
 module.exports = function(req, res, cab) {

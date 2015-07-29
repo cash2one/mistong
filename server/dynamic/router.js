@@ -19,7 +19,7 @@ router.attack = function (urltarget, req, res) {
 
     }else{
         logger.error("missing: "+urltarget);
-        courlene("./other/template/404.tmpl",{}, function (star) {
+        courlene("./src/ti/template/404.tmpl",{}, function (star) {
             res.writeHead(200, {
                 "Content-Type": "text/html"
             });

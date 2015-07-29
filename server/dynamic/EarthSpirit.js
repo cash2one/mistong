@@ -58,7 +58,7 @@ module.exports = function(tplPath, options, fn) {
         });
         return str;
     };
-    // console.info(tplPath);
+     console.info(tplPath);
     fs.readFile(tplPath, 'utf8', function(err, str) {
         if (err) return fn(err);
         // PreDetect For Helper Register
