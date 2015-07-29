@@ -12,7 +12,8 @@
     "artTemplate": "~3.0.1",
     "underscore": "~1.8.3",
     "requirejs": "~2.1.18",
-    "lie": "~2.9.1"
+    "lie": "~2.9.1",
+    "react": "~0.13.3"
   },
   "description": "依赖库",
   "moduleType": [
