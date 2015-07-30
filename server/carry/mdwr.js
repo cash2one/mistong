@@ -17,12 +17,11 @@ marked.setOptions({
 });
 
 router.reg("/button", function(req, res) {
-    fs.readFile("./other/markdown/button.md", 'utf8', function(err, str) {
+    fs.readFile("./src/ti/markdown/button.md", 'utf8', function(err, str) {
         if (err) return fn(err);
         // PreDetect For Helper Register
         marked(str, function(err, content) {
             if (err) throw err;
-            console.log(content);
             res.write(content);
             res.end();
         });
