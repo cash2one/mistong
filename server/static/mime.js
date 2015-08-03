@@ -16,5 +16,11 @@ exports.types = {
     "wav": "audio/x-wav",
     "wma": "audio/x-ms-wma",
     "wmv": "video/x-ms-wmv",
-    "xml": "text/xml"
+    "xml": "text/xml",
+    "ttf":"application/x-font-ttf",
+    "otf":"application/x-font-opentype",
+    "woff":"application/font-woff",
+    "woff2":"application/font-woff2",
+    "eot":"application/vnd.ms-fontobject",
+    "sfnt":"application/font-sfnt"
 };
