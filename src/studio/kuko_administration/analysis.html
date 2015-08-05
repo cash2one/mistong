@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<title>kuko课程效果分析</title>
+</head>
+
+<body>
+	<div class="main">
+        <div class="content clearfix">
+        	<div class="w_left">
+            	<div class="lift">
+                	<h3><a href="javascript:;"><img src="images/index/user.png" width="79" height="79" /></a></h3>
+                    <ul>
+                    	<li><a class="home" href="index.html">首页</a></li>
+                        <li><a class="xun" href="xuntang.html">我要巡堂</a></li>
+                        <li><a class="culum" href="curriculum.html">课程管理</a></li>
+                        <li><a class="teach" href="teacher.html">教师管理</a></li>
+                        <li><a class="ban" href="class_stepfirst.html">班级管理</a></li>
+                        <li><a class="timetable" href="row_stepfirst.html">排课管理</a></li>
+                        <li class="selected"><a class="analysis" href="javascript:;">教学分析</a></li>
+                        <li><a class="member" href="u_membercenter.html">个人中心(<span>4</span>)</a></li>
+                        <li><a class="help" href="javascript:;">使用帮助</a></li>
+                    </ul>
+                    <h4><a href="javascript:;"><img src="images/index/feedback.png" width="156" height="70" /></a></h4>
+                </div>
+            </div>
+            <div class="w_right">
+            	<div class="all">
+                	<div class="course clearfix">
+                		<h2>课程效果分析</h2>
+                    </div>
+                    <div class="consult">
+                    	<ul class="clearfix">
+                        	<li>
+                            	<h2>总体满意度</h2>
+                                <h3>92%</h3>
+                            </li>
+                            <li>
+                            	<h2>好评率</h2>
+                                <h3>95%</h3>
+                            </li>
+                            <li>
+                            	<h2>学生参与度</h2>
+                                <h3>95%</h3>
+                            </li>
+                            <li>
+                            	<h2>课堂活跃度</h2>
+                                <h3>98%</h3>
+                            </li>
+                            <li>
+                            	<h2>学生出勤率</h2>
+                                <h3>92%</h3>
+                            </li>
+                            <li class="num_ke">
+                            	<h2>已授课程数</h2>
+                                <h3>12</h3>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="analysis_back">
+                        <div class="an_back clearfix">
+                            <ul id="tags">
+                                <li class="selectTag"><a onClick="selectTag('tagContent0',this)" href="javascript:void(0)">课程宏观效果</a></li>
+                                <li><a onClick="selectTag('tagContent1',this)" href="javascript:void(0)">课程答题效果</a></li>
+                                <li><a onClick="selectTag('tagContent2',this)" href="javascript:void(0)">授课过程分析</a></li>
+                                <li><a onClick="selectTag('tagContent3',this)" href="javascript:void(0)">课程意见反馈</a></li>
+                                <p>更多分析报告敬请期待！</p>
+                            </ul>
+                        </div>
+                        
+                        <div id="tagContent" class="analysis">
+                            <div class="selectTag tagContent" id="tagContent0" style="display:block;">
+                            	<div id="qie">
+                                	<h2><img src="images/index/qu.png" width="24" height="18" /><a onclick="pupopen()" href="javascript:;">查看走势图</a></h2>
+                                    <table>
+                                        <tr>
+                                            <th style="width:128px;">课程开始时间</th>
+                                            <th style="width:104px;">课程名</th>
+                                            <th style="width:66px;">报名人数</th>
+                                            <th style="width:66px;">听课人数</th>
+                                            <th style="width:52px;">出勤率</th>
+                                            <th style="width:78px;">学生参与度</th>
+                                            <th style="width:78px;">课堂活跃度</th>
+                                            <th style="width:52px;">好评率</th>
+                                            <th style="width:78px;">授课满意度</th>
+                                            <th style="width:78px;">内容满意度</th>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:104px;">语文-古诗词专项</td>
+                                            <td style="width:66px;">40</td>
+                                            <td style="width:66px;">38</td>
+                                            <td style="width:52px;">95.00%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:52px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                        </tr>
+                                        <tr class="line">
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:104px;">语文-古诗词专项</td>
+                                            <td style="width:66px;">40</td>
+                                            <td style="width:66px;">38</td>
+                                            <td style="width:52px;">95.00%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:52px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:104px;">语文-古诗词专项</td>
+                                            <td style="width:66px;">40</td>
+                                            <td style="width:66px;">38</td>
+                                            <td style="width:52px;">95.00%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:52px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                        </tr>
+                                        <tr class="line">
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:104px;">语文-古诗词专项</td>
+                                            <td style="width:66px;">40</td>
+                                            <td style="width:66px;">38</td>
+                                            <td style="width:52px;">95.00%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:52px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:104px;">语文-古诗词专项</td>
+                                            <td style="width:66px;">40</td>
+                                            <td style="width:66px;">38</td>
+                                            <td style="width:52px;">95.00%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:52px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                        </tr>
+                                        <tr class="line">
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:104px;">语文-古诗词专项</td>
+                                            <td style="width:66px;">40</td>
+                                            <td style="width:66px;">38</td>
+                                            <td style="width:52px;">95.00%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:52px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:104px;">语文-古诗词专项</td>
+                                            <td style="width:66px;">40</td>
+                                            <td style="width:66px;">38</td>
+                                            <td style="width:52px;">95.00%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:78px;">100%</td>
+                                            <td style="width:52px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                            <td style="width:78px;">98%</td>
+                                        </tr>
+                                    </table>
+                                    <div class="my_analysis_footer clearfix">
+                                        <div class="pag_right">
+                                            <a class="nextPage" href="javascript:;">上一页</a>
+                                            <a href="javascript:;">第2页/共3页 </a>
+                                            <a class="nextPage" href="javascript:;">下一页</a>                  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tu" id="tu" style="display:none;">
+                                	<img src="images/index/biao.png" width="774" height="278" />
+                                </div>
+                            </div>
+                            <div class="tagContent" id="tagContent1">
+                                <div id="qie1">
+                                	<h2><img src="images/index/qu.png" width="24" height="18" /><a onclick="pupopen1()" href="javascript:;">查看走势图</a></h2>
+                                    <table>
+                                        <tr>
+                                            <th style="width:128px;">课程开始时间</th>
+                                            <th style="width:110px;">课程名</th>
+                                            <th style="width:70px;">报名人数</th>
+                                            <th style="width:70px;">参与人数</th>
+                                            <th style="width:62px;">参与度</th>
+                                            <th style="width:62px;">听懂没</th>
+                                            <th style="width:62px;">判断题</th>
+                                            <th style="width:62px;">单选题</th>
+                                            <th style="width:62px;">多选题</th>
+                                            <th style="width:62px;">准确率</th>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:110px;">语文-古诗词专项</td>
+                                            <td style="width:70px;">40</td>
+                                            <td style="width:70px;">38</td>
+                                            <td style="width:62px;">95.00%</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">98%</td>
+                                        </tr>
+                                        <tr class="line">
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:110px;">语文-古诗词专项</td>
+                                            <td style="width:70px;">40</td>
+                                            <td style="width:70px;">38</td>
+                                            <td style="width:62px;">95.00%</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">98%</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:110px;">语文-古诗词专项</td>
+                                            <td style="width:70px;">40</td>
+                                            <td style="width:70px;">38</td>
+                                            <td style="width:62px;">95.00%</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">98%</td>                                        </tr>
+                                        <tr class="line">
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:110px;">语文-古诗词专项</td>
+                                            <td style="width:70px;">40</td>
+                                            <td style="width:70px;">38</td>
+                                            <td style="width:62px;">95.00%</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">98%</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:110px;">语文-古诗词专项</td>
+                                            <td style="width:70px;">40</td>
+                                            <td style="width:70px;">38</td>
+                                            <td style="width:62px;">95.00%</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">98%</td>
+                                        </tr>
+                                        <tr class="line">
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:110px;">语文-古诗词专项</td>
+                                            <td style="width:70px;">40</td>
+                                            <td style="width:70px;">38</td>
+                                            <td style="width:62px;">95.00%</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">98%</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:128px;">2014-12-03 11:30</td>
+                                            <td style="width:110px;">语文-古诗词专项</td>
+                                            <td style="width:70px;">40</td>
+                                            <td style="width:70px;">38</td>
+                                            <td style="width:62px;">95.00%</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">6</td>
+                                            <td style="width:62px;">98%</td>
+                                        </tr>
+                                    </table>
+                                    <div class="my_analysis_footer clearfix">
+                                        <div class="pag_right">
+                                            <a class="nextPage" href="javascript:;">上一页</a>
+                                            <a href="javascript:;">第2页/共3页 </a>
+                                            <a class="nextPage" href="javascript:;">下一页</a>                  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tu" id="tu1" style="display:none;">
+                                	<img src="images/index/biao1.png" width="774" height="278" />
+                                </div>
+                            </div>
+                            <div class="tagContent" id="tagContent2">
+                               <div class="kong_none">
+                               		报表数据准备中~
+                               </div> 
+                            </div>
+                            <div class="tagContent" id="tagContent3">
+                                <div class="kong_none">
+                               		报表数据准备中~
+                               </div> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+	$('.btn').hover(
+	  function(){
+		$(this).addClass('btnHover');
+	  },
+	  function(){
+		$(this).removeClass('btnHover');
+	  }
+	);
+	//切换
+	function selectTag(showContent,selfObj){
+		var tag = document.getElementById("tags").getElementsByTagName("li");
+		var taglength = tag.length;
+		for(i=0; i<taglength; i++){
+			tag[i].className = "";
+		}
+		selfObj.parentNode.className = "selectTag";
+		
+		for(i=0; j=document.getElementById("tagContent"+i); i++){
+			j.style.display = "none";
+		}
+		document.getElementById(showContent).style.display = "block";
+	}
+	//当前模块切换
+	function pupopen(){
+		document.getElementById("tu").style.display="block";	
+		document.getElementById("qie").style.display="none";	
+		}
+	function pupopen1(){
+		document.getElementById("tu1").style.display="block";	
+		document.getElementById("qie1").style.display="none";	
+		}
+</script>
+</body>
+</html>

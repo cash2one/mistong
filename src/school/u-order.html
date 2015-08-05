@@ -1,0 +1,570 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/member.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/login.js" type="text/javascript"></script>
+<script src="js/flying.js" type="text/javascript"></script>
+<script src="js/xcConfirm.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<title>kuko学院个人中心</title>
+</head>
+
+<body>
+	<div class="commer">
+    	<div class="header clearfix">
+        	<div class="logo">
+                <a href="javascript:;">
+                    <img src="images/main/login.png" width="255" height="33" />
+                </a>
+            </div>
+            <div class="user">
+            	<ul class="clearfix">
+                	<li><span><img src="images/main/user-name.png" width="25" height="25" />张三，早上好！</span></li>
+                    <li class="line"></li>
+                    <li><a class="user-center" href="u_membercenter.html">个人中心</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="nav-zong" id="nav_main">
+        	<div class="nav">
+            	<ul>
+                	<li>
+                    	<div class="bm">
+                        	<div class="inner">
+                            	<span></span>
+                        		<a href="index.html">首页</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href="live.html">直播间</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href="demand.html">点播间</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href="college.html">学院派</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href=".">答疑派</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clsTitle" id="collectBox">
+                    <a class="lan" href="study-kong.html">
+                        学习篮子（<span>5</span>）
+                    </a>
+                    <div class="tan">
+                    	<p>您的学习篮子里已有<span>8</span>节课程，快去确认报名吧！</p>
+                        <a class="sure" href="study.html">确认报名</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+        	<div class="content-table">
+            	<div class="play-bread clearfix">
+                    <div class="bread-left">
+                        <a href="javascript:;">首页</a>
+                        <span>></span>
+                        <a href="u_membercenter.html">个人中心</a>
+                        <span>></span>
+                        <a href="javascript:;">我的订单</a>
+                    </div>
+                </div>
+                
+                <div class="user-zong clearfix">
+                	<div class="user-left">
+                    	<div class="user-sch">
+                            <h2><img src="images/main/user-school.png" width="10" height="14" />我的学院</h2>
+                            <div class="status clearfix">
+                                <div class="status-left">
+                                    <img src="images/main/user-pic.png" width="66" height="66" />
+                                </div>
+                                <div class="status-right">
+                                    <p>Angela</p>
+                                    <p>身份：学员</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mine">
+                        	<h2>我的成长记录</h2>
+                        	<ul>
+                                <!--<li><a href="javascript:;">我的课表</a></li>-->
+                                <li class="selected"><a href="javascript:;">我的订单(<span>1</span>)</a></li>
+                                <!--<li><a href="javascript:;">我的圈子(<span>1</span>)</a></li>
+                                <li><a href="javascript:;">我的问答(<span>8</span>)</a></li>-->
+                                <li><a href="u_wealth.html">我的财富</a></li>
+                                <!--<li><a href="javascript:;">我的勋章</a></li>-->
+                                <li><a href="u-task.html">我的任务</a></li>
+                            </ul>
+                            <h2>我的个人资料</h2>
+                        	<ul>
+                                <li><a href="u-basic.html">基本资料</a></li>
+                                <!--<li><a href="javascript:;">我的收藏(<span>8</span>)</a></li>
+                                <li><a href="javascript:;">我的评论</a></li>-->
+                                <li><a href="u-safe.html">账户安全</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-right">
+                    	<div class="wrap_back">
+                            <div class="back_order">
+                                <ul id="tags" class="clearfix">
+                                    <li class="selectTag"><a onClick="selectTag('tagContent0',this)" href="javascript:void(0)">未支付订单(<b>1</b>)</a></li>
+                                    <li><a onClick="selectTag('tagContent1',this)" href="javascript:void(0)">已完结订单(<b>2</b>)</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div id="tagContent">
+                                <div class="selectTag tagContent" id="tagContent0" style="display:block;">
+                                    <div class="my_order_main clearfix">
+                                        <div class="my_order">
+                                            <dl>
+                                                <dt style="width:100px;">订单号</dt>
+                                                <dt style="width:130px;">下单时间</dt>
+                                                <dt style="width:181px;">订单信息</dt>
+                                                <dt style="width:100px;">订单金额</dt>
+                                                <dt style="width:90px;">订单状态</dt>
+                                                <dt style="width:90px;">支付状态</dt>
+                                                <dt style="width:80px;">操作</dt>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" onclick="show();return false;" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                    <div class="yin" id="div2" style="display:none;">
+                                                        <a id="btn3" href="javascript:;">取消订单</a>
+                                                        <a href="javascript:;">查看详情</a>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                    
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tagContent" id="tagContent1">
+                                    <div class="my_order_main clearfix">
+                                        <div class="my_order">
+                                            <dl>
+                                                <dt style="width:100px;">订单号</dt>
+                                                <dt style="width:130px;">下单时间</dt>
+                                                <dt style="width:181px;">订单信息</dt>
+                                                <dt style="width:100px;">订单金额</dt>
+                                                <dt style="width:90px;">订单状态</dt>
+                                                <dt style="width:90px;">支付状态</dt>
+                                                <dt style="width:80px;">操作</dt>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" onclick="show();return false;" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                    <div class="yin" id="div2" style="display:none;">
+                                                        <a id="btn3" href="javascript:;">取消订单</a>
+                                                        <a href="javascript:;">查看详情</a>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                    
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd style="width:100px;"><a href="javascript:;">234567898488</a></dd>
+                                                <dd style="width:130px;">2014-11-27 09:00</dd>
+                                                <dd style="width:181px;">
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                    <img src="images/main/news.png" width="51" height="32" />
+                                                </dd>
+                                                <dd style="width:100px;">￥1.00</dd>
+                                                <dd style="width:90px;">下单成功</dd>
+                                                <dd style="width:90px;">未支付</dd>
+                                                <dd style="width:80px;">
+                                                    <a class="btn" href="javascript:;">
+                                                        去付款<img src="images/main/click_xia.png" width="10" height="8" />
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my_order_footer clearfix">
+                                    <div class="pag_num">
+                                        第1-8条/共2条
+                                    </div>
+                                    <div class="pag_right">
+                                        <a class="nextPage" href="javascript:;">上一页</a>
+                                        <a href="javascript:;">第2页/共3页 </a>
+                                        <a class="nextPage" href="javascript:;">下一页</a>                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pop-content">
+            <div class="cancel_main">
+                <span>*</span>
+                <textarea placeholder="请填写取消订单的原因"></textarea>
+                <div class="cancel_btn clearfix">
+                    <a id="btn4" class="btn" href="javascript:;">提交</a>
+                    <a class="no" href="javascript:;">我不取消了</a>
+                </div>
+            </div>
+            <div class="cuo_main">
+                <ul class="clearfix">
+                    <li><img src="images/main/zhifu_cuo.png" /></li>
+                    <li class="jihui">订单已取消</li>
+                </ul>
+                <div class="que">
+                    <a id="btn5" class="btn" href="javascript:;">提交</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="copyright">
+            	<ul>
+                	<li><img src="images/main/cnnic.png" width="127" height="47" /></li>
+                    <li><img src="images/main/hy_124x47.png" width="124" height="47" /></li>
+                	<li>
+                    	<p>Copyright © 2015  杭州狮说教育科技有限公司  版权所有   浙ICP备14032235号</p>
+                    	<p class="foot-li">
+                        	<img src="images/main/1.png" width="16" height="16" />客服电话：4000-136-070
+                        	<span><img src="images/main/2.png" width="14" height="17" />客服QQ群：374465304</span>
+                        </p>
+                    </li>
+                </ul>
+                <span></span>
+            </div>
+        </div>
+    </div>
+<script>
+	$('.btn').hover(
+	  function(){
+		$(this).addClass('btnHover');
+	  },
+	  function(){
+		$(this).removeClass('btnHover');
+	  }
+	);
+	
+	$('.btn').click(function(){
+	  $(this).addClass('btnGray');
+	});
+//切换
+	function selectTag(showContent,selfObj){
+		var tag = document.getElementById("tags").getElementsByTagName("li");
+		var taglength = tag.length;
+		for(i=0; i<taglength; i++){
+			tag[i].className = "";
+		}
+		selfObj.parentNode.className = "selectTag";
+		
+		for(i=0; j=document.getElementById("tagContent"+i); i++){
+			j.style.display = "none";
+		}
+		document.getElementById(showContent).style.display = "block";
+	}
+//点击弹出
+	function show() {
+        if (document.getElementById('div2').style.display == 'block')
+            document.getElementById('div2').style.display = 'none';
+        else
+            document.getElementById('div2').style.display = 'block'
+		if (document.getElementById('div3').style.display == 'block')
+            document.getElementById('div3').style.display = 'none';
+        else
+            document.getElementById('div3').style.display = 'block'
+    }
+//弹框插件
+$(function(){
+	$("#btn3").click(function(){
+	window.wxc.xcConfirm($(".pop-content").html(), window.wxc.xcConfirm.typeEnum.confirm);	
+	});
+});
+$(function(){
+		$(document).on("click","#btn4",function(){
+			//alert($(this).text());
+			$(".cancel_main").hide(0);
+			$(".cuo_main").show(0);
+		});
+		$(document).on("click","#btn5",function(){
+			$(".xcConfirm").hide(0);
+		});
+	});
+</script>
+</body>
+</html>

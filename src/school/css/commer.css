@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+html { color: #000; overflow-y: scroll;}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, form, th, td {margin: 0; padding: 0;}
+body, button, input, select, textarea { font-family:"微软雅黑";}
+h1, h2, h3, h4, h5, h6 {font-size:12px;font-weight: normal;}
+ul, ol {list-style: none outside none;}
+a{text-decoration: none; color:#333;margin: 0; padding: 0;}
+a:hover{text-decoration:none;}
+u{ text-decoration:none}
+img{ margin:0; padding:0;border: 0 none; overflow:hidden;}
+table{border-collapse: collapse;border-spacing: 0;}
+.clearfix{clear:both; overflow:hidden;}
+.header{ width:1000px; margin:0 auto;}
+.main-login{ background:#a9e242; border-top:1px solid #d1e7a7; border-bottom:1px solid #a0d53e;}
+.main-register{ background:#f9f9f9; border-top:1px solid #f1f1f1; border-tottom:1px solid #ebebeb;}
+.footer{ width:100%; background:#fff; border-top:1px solid #ededed;}
+.footer .copyright{ width:1000px; margin:0 auto;}
+.footer .copyright ul{ margin-left:65px;}
+.footer .copyright ul li{ float:left; margin-top:15px; margin-left:20px;}
+.footer .copyright ul li p{ color:#a6a6a6; font-size:14px; line-height:25px;}
+.footer .copyright ul li p.foot-li{ margin-left:10px;}
+.footer .copyright ul li p span{ margin-left:20px;}
+.footer .copyright ul li p img{ vertical-align:middle; margin-top:-3px; margin-right:5px;}
+/*input[type="radio"] {background-color:blue;}*/

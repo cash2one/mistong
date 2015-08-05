@@ -1,0 +1,760 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/verification.js" type="text/javascript"></script>
+<script src="layer/layer.min.js" type="text/javascript"></script>
+<script src="layer/layer.js" type="text/javascript"></script>
+<title>kuko微课管理</title>
+</head>
+
+<body>
+	<div class="main">     
+        <div class="content clearfix">
+        	<div class="w_left">
+            	<div class="lift">
+                	<h3><a href="javascript:;"><img src="images/index/user.png" width="79" height="79" /></a></h3>
+                	<ul>
+                    	<li><a class="home" href="index.html">首页</a></li>
+                        <li><a class="xun" href="xuntang.html">我要巡堂</a></li>
+                        <li><a class="culum" href="curriculum.html">课程管理</a></li>
+                        <li><a class="teach" href="teacher.html">教师管理</a></li>
+                        <li><a class="roster" href="roster.html">学生花名册</a></li>
+                        <li><a class="ban" href="class_stepfirst.html">班级管理</a></li>
+                        <li><a class="timetable" href="row_stepfirst.html">排课管理</a></li>
+                        <li><a class="analysis" href="analysis.html">教学分析</a></li>
+                        <li class="selected"><a class="micro" href="javascript:;">微课管理</a></li>
+                        <li><a class="member" href="u_membercenter.html">个人中心(<span>4</span>)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w_right">
+            	<div class="all">
+                	<div class="course clearfix">
+                		<h2>微课管理</h2>
+                        <span>上传、管理本校的微课</span>
+                        <div class="micro-header">
+                        	<a class="speed" href="javascript:;">进度<i>1</i></a>
+                            <a class="upload-ke" href="javascript:;">上传微课</a>
+                        </div>
+                    </div>
+                    <div class="micro-zong">
+                    	<div class="micro-screen">
+                        	<div class="screen">
+                                <div class="question">
+                                    <div class="select_box">
+                                        <span class="select_txt">全部</span><a class="xia" href="javascript:;"></a>
+                                        <div class="option">
+                                            <a class="current" href="javascript:;">最近7天</a>
+                                            <a href="javascript:;">最近30天</a>
+                                            <a href="javascript:;">最近90天</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="question">
+                                    <div class="select_box">
+                                        <span class="select_txt">学科类别</span><a class="xia" href="javascript:;"></a>
+                                        <div class="option">
+                                            <a class="current" href="javascript:;">语文</a>
+                                            <a href="javascript:;">数学</a>
+                                            <a href="javascript:;">英语</a>
+                                            <a href="javascript:;">物理</a>
+                                            <a href="javascript:;">化学</a>
+                                            <a href="javascript:;">生物</a>
+                                            <a href="javascript:;">政治</a>
+                                            <a href="javascript:;">历史</a>
+                                            <a href="javascript:;">地理</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="question">
+                                    <div class="select_box">
+                                        <span class="select_txt">状态</span><a class="xia" href="javascript:;"></a>
+                                        <div class="option">
+                                            <a class="current" href="javascript:;">待发布</a>
+                                            <a href="javascript:;">已发布</a>
+                                            <a href="javascript:;">上传中</a>
+                                            <a href="javascript:;">转化中</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="screen-input">
+                                	<input type="text" placeholder="课程名称、主讲人" />
+                                </div>
+                                <div class="screen-search">
+                                    <a href="javascript:;">搜 索</a>
+                                </div>
+                            </div>
+                        </div>
+                    	<div class="teacher_new clearfix" id="playList">
+                            <table border="0">
+                                <tr>
+                                    <th style="width:40px;"></th>
+                                    <th style="width:220px;">微课名称</th>
+                                    <th style="width:100px;">学科类别</th>
+                                    <th style="width:120px;">上传日期</th>
+                                    <th style="width:80px;">视频大小</th>
+                                    <th style="width:80px;">状态</th>
+                                    <th style="width:140px;">操作</th>
+                                </tr>
+                                
+                                <tr>
+                                    <td><input type="checkbox" name="checkname" /></td>
+                                    <td>
+                                    	<div class="micro-name">
+                                            <img src="images/index/micro-name.png" width="76" height="49" />
+                                            <span>35:05</span>
+                                        </div>
+                                        <div class="micro-size">
+                                            <h4>语文-文言文解析1</h4>
+                                            <h5>主讲人：王晓明</h5>
+                                        </div>
+                                    </td>
+                                    <td>语文</td>
+                                    <td>2015-1-30  10:00</td>
+                                    <td>1.52GB</td>
+                                    <td>待发布</td>
+                                    <td>
+                                    	<a class="release" href="javascript:;">发布</a>
+                                        <a class="editing" href="javascript:;">编辑</a>
+                                        <a class="other" href="javascript:;"><img src="images/index/other.png" width="12" height="10" /></a>
+                                        <div class="other-hide">
+                                        	<ul>
+                                            	<li><a href="javascript:;">下载</a></li>
+                                                <li><a class="play-data" href="javascript:;">数据</a></li>
+                                                <li><a class="clear" href="javascript:;">删除</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><input type="checkbox" name="checkname" /></td>
+                                    <td>
+                                    	<div class="micro-name">
+                                            <img src="images/index/micro-noname.png" width="76" height="49" />
+                                            <span>35:05</span>
+                                        </div>
+                                        <div class="micro-size">
+                                            <h4>语文-文言文解析1</h4>
+                                            <h5>主讲人：王晓明</h5>
+                                        </div>
+                                    </td>
+                                    <td>语文</td>
+                                    <td>2015-1-30  10:00</td>
+                                    <td>1.52GB</td>
+                                    <td>已发布</td>
+                                    <td>
+                                    	<a class="shelf" href="javascript:;">下架</a>
+                                        <a class="editing" href="javascript:;">编辑</a>
+                                        <a class="other" href="javascript:;"><img src="images/index/other.png" width="12" height="10" /></a>
+                                        <div class="other-hide">
+                                        	<ul>
+                                            	<li><a href="javascript:;">下载</a></li>
+                                                <li><a href="javascript:;">数据</a></li>
+                                                <li><a class="clear" href="javascript:;">删除</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><input type="checkbox" name="checkname" /></td>
+                                    <td>
+                                    	<div class="micro-name">
+                                            <img src="images/index/micro-name.png" width="76" height="49" />
+                                            <span>35:05</span>
+                                        </div>
+                                        <div class="micro-size">
+                                            <h4>语文-文言文解析1</h4>
+                                            <h5>主讲人：王晓明</h5>
+                                        </div>
+                                    </td>
+                                    <td>语文</td>
+                                    <td>2015-1-30  10:00</td>
+                                    <td>1.52GB</td>
+                                    <td>转化中</td>
+                                    <td>
+                                    	<a class="shelf" href="javascript:;">下架</a>
+                                        <a class="editing" href="javascript:;">编辑</a>
+                                        <a class="other" href="javascript:;"><img src="images/index/other.png" width="12" height="10" /></a>
+                                        <div class="other-hide">
+                                        	<ul>
+                                            	<li><a href="javascript:;">下载</a></li>
+                                                <li><a href="javascript:;">数据</a></li>
+                                                <li><a class="clear" href="javascript:;">删除</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><input type="checkbox" name="checkname" /></td>
+                                    <td>
+                                    	<div class="micro-name">
+                                            <img src="images/index/micro-name.png" width="76" height="49" />
+                                            <span>35:05</span>
+                                        </div>
+                                        <div class="micro-size">
+                                            <h4>语文-文言文解析1</h4>
+                                            <h5>主讲人：王晓明</h5>
+                                        </div>
+                                    </td>
+                                    <td>语文</td>
+                                    <td>2015-1-30  10:00</td>
+                                    <td>1.52GB</td>
+                                    <td>上传中</td>
+                                    <td>
+                                    	<a class="norelease" href="javascript:;">发布</a>
+                                        <a class="editing" href="javascript:;">编辑</a>
+                                        <a class="other" href="javascript:;"><img src="images/index/other.png" width="12" height="10" /></a>
+                                        <div class="other-hide">
+                                        	<ul>
+                                            	<li><a href="javascript:;">下载</a></li>
+                                                <li><a href="javascript:;">数据</a></li>
+                                                <li><a class="clear" href="javascript:;">删除</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><input type="checkbox" name="checkname" /></td>
+                                    <td>
+                                    	<div class="micro-name">
+                                            <img src="images/index/micro-name.png" width="76" height="49" />
+                                            <span>35:05</span>
+                                        </div>
+                                        <div class="micro-size">
+                                            <h4>语文-文言文解析1</h4>
+                                            <h5>主讲人：王晓明</h5>
+                                        </div>
+                                    </td>
+                                    <td>语文</td>
+                                    <td>2015-1-30  10:00</td>
+                                    <td>1.52GB</td>
+                                    <td>待发布</td>
+                                    <td>
+                                    	<a class="norelease" href="javascript:;">发布</a>
+                                        <a class="editing" href="javascript:;">编辑</a>
+                                        <a class="other" href="javascript:;"><img src="images/index/other.png" width="12" height="10" /></a>
+                                        <div class="other-hide">
+                                        	<ul>
+                                            	<li><a href="javascript:;">下载</a></li>
+                                                <li><a href="javascript:;">数据</a></li>
+                                                <li><a class="clear" href="javascript:;">删除</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <ul>
+                                <li class="roster-left"><input type="checkbox" name="browser-all" id="checkall" /><span>全选</span></li>
+                                <li class="roster-right"><a class="clear-more" href="javascript:;">删除</a></li>
+                            </ul>
+                    	</div>
+                    	<div class="my_order_footer clearfix">
+                            <div class="pag_num">
+                                第1-8条/共2条
+                            </div>
+                            <div class="pag_right">
+                                <a class="nextPage" href="javascript:;">上一页</a>
+                                <a href="javascript:;">第2页/共3页 </a>
+                                <a class="nextPage" href="javascript:;">下一页</a>                  
+                            </div>
+                        </div>
+                        
+                        <div class="storage">
+                        	<span>您当前空间使用情况如下: <i>1980</i>GB/2048G</span>
+                            <a class="space" href="javascript:;">升级空间 </a>
+                            <a class="record" href="javascript:;">升级记录</a> 
+                            <p class="insufficient">您的空间容量不足，请及时联系工作人员扩容或删除部分文件。</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="upgrade" style="display:none;">
+                	<div class="batch_main">
+                    	<div class="upgrade-micro clearfix">
+                            <div class="upgrade-size">
+                            	<p>升级微课空间容量请联系所在区域的相关工作人员，由他们代为购买空间容量升级。</p>   
+                            </div>
+                        </div>
+                        <div class="micro-btn">
+                        	<a class="same" href="javascript:;">知道了</a>
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="jindu" style="display:none;">
+                	<div class="speed_main">
+                        <div class="two-main">
+                            <ul class="clearfix">
+                                <li>
+                                    语文-文言文解析.mp4 
+                                </li>
+                                <li>
+                                    <span class="qiang progress">
+                                        <i style="width: 100%;"></i>
+                                    </span>
+                                    <b>100%</b>
+                                </li>
+                                <li>
+                                    <a class="play-pic" href="javascript:;"></a>
+                                    <a class="play-clear" href="javascript:;"></a>
+                                </li>
+                            </ul>
+                            <div class="sudu">
+                                <span>上传速度：<em>39.3</em>KB/s</span>
+                                <span>剩余时间：<em>12:30</em></span>
+                            </div>  
+                            <div class="finish" style="display:none;">
+                                <a href="javascript:;">打开文件</a>
+                                <a href="javascript:;">打开文件夹</a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="speed_main">
+                        <div class="two-main">
+                            <ul class="clearfix">
+                                <li>
+                                    语文-文言文解析.mp4 
+                                </li>
+                                <li>
+                                    <span class="qiang progress">
+                                        <i style="width: 100%;"></i>
+                                    </span>
+                                    <b>100%</b>
+                                </li>
+                                <li>
+                                    <a class="play-pic" href="javascript:;"></a>
+                                    <a class="play-clear" href="javascript:;"></a>
+                                </li>
+                            </ul>
+                            <div class="sudu">
+                                <span>上传速度：<em>39.3</em>KB/s</span>
+                                <span>剩余时间：<em>12:30</em></span>
+                            </div>  
+                            <div class="finish" style="display:none;">
+                                <a href="javascript:;">打开文件</a>
+                                <a href="javascript:;">打开文件夹</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="speed_main">
+                        <div class="two-main">
+                            <ul class="clearfix">
+                                <li>
+                                    语文-文言文解析.mp4 
+                                </li>
+                                <li>
+                                    <span class="qiang">
+                                        <i style="width:0;"></i>
+                                    </span>
+                                    <b>格式转化中</b>
+                                </li>
+                                <li>
+                                    <a class="play-pic" href="javascript:;"></a>
+                                    <a class="play-clear" href="javascript:;"></a>
+                                </li>
+                            </ul>
+                            <div class="sudu">
+                                <span>上传速度：<em>39.3</em>KB/s</span>
+                                <span>剩余时间：<em>12:30</em></span>
+                            </div>  
+                            <div class="finish" style="display:none;">
+                                <a href="javascript:;">打开文件</a>
+                                <a href="javascript:;">打开文件夹</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                
+                <!--<div class="video" style="display:none;">
+                	<div class="batch_main">
+                    	<div class="video-micro clearfix">
+                            <div class="upgrade-size">
+                            	<ul>
+                                    <li><img src="images/index/yun.png" width="74" height="54" /></li>
+                                    <li><a class="upload-btn" href="javascript:;">上传微课</a></li> 
+                                    <li><p>请上传符合要求的微课视频（格式mp4,单个大小不超过2GB）</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                
+                <div class="video-two" style="display:none;">
+                    <div class="two-main">
+                        <ul class="clearfix">
+                            <li>
+                                语文-文言文解析.mp4 
+                            </li>
+                            <li>
+                                <span class="qiang progress">
+                                    <i style="width: 100%;"></i>
+                                </span>
+                                <b>100%</b>
+                            </li>
+                            <li>
+                                <p class="no-upload">取消上传</p>
+                            </li>
+                        </ul>
+                        <div class="sudu">
+                            <span>上传速度：<em>39.3</em>KB/s</span>
+                            <span>剩余时间：<em>12:30</em></span>
+                        </div>  
+                    </div>
+                    <div class="editing_main">
+                        <div class="editing-micro">
+                            <ul class="clearfix">
+                                <li>
+                                    <span>微课标题：</span>
+                                    <input class="editing-title" type="text" placeholder="语文-高分作文全解析" />
+                                </li>
+                                <li>
+                                    <span>微课简介：</span>
+                                    <div class="discuss com_wrap">
+                                        <textarea name="personal" class="comments" placeholder="高分作文之'三大三小'（上）：常有人说作文要'凤头、猪肚、豹尾'，也有人说好作文''出其不意'，本系列课程，牛哥带你用'三大三小'结构，90分钟堪破高分作文的秘密！
+    出其不意'，本系列课程，牛哥带'用'三大三小'结构，90分钟堪破高分作文的秘密！"></textarea>
+                                        <span class="c_failue" style="color:red;"></span>
+                                        <span class="c_length">还可以输入<em style="color:red;" id='c_l_num'>200</em>字</span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>学科类别：</span>
+                                    <div class="question">
+                                        <div class="select_box">
+                                            <span class="select_txt">语文</span><a class="xia" href="javascript:;"></a>
+                                            <div class="option">
+                                                <a class="current" href="javascript:;">语文</a>
+                                                <a href="javascript:;">数学</a>
+                                                <a href="javascript:;">英语</a>
+                                                <a href="javascript:;">物理</a>
+                                                <a href="javascript:;">化学</a>
+                                                <a href="javascript:;">生物</a>
+                                                <a href="javascript:;">政治</a>
+                                                <a href="javascript:;">历史</a>
+                                                <a href="javascript:;">地理</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li class="jiang">
+                                    <span>主讲人：</span>
+                                    <input class="editing-name" type="text" placeholder="王晓飞" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="micro-btn">
+                            <a class="same" href="javascript:;">保存</a>
+                            <a class="zanbu" href="javascript:;">暂不修改</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="editing-new" style="display:none;">
+                	<div class="editing_main">
+                    	<div class="editing-micro">
+                            <ul class="clearfix">
+                            	<li>
+                                	<span>微课标题：</span>
+                                    <input class="editing-title" type="text" placeholder="语文-高分作文全解析" />
+                                </li>
+                                <li>
+                                	<span>微课简介：</span>
+                                    <div class="discuss com_wrap">
+                                        <textarea name="personal" id="comments" class="comments" placeholder="高分作文之'三大三小'（上）：常有人说作文要'凤头、猪肚、豹尾'，也有人说好作文''出其不意'，本系列课程，牛哥带你用'三大三小'结构，90分钟堪破高分作文的秘密！
+    出其不意'，本系列课程，牛哥带'用'三大三小'结构，90分钟堪破高分作文的秘密！"></textarea>
+                                        <span class="c_failue" style="color:red;"></span>
+                                        <span class="c_length">还可以输入<em style="color:red;" id='c_l_num'>200</em>字</span>
+                                    </div>
+                                </li>
+                                <li>
+                                	<span>学科类别：</span>
+                                    <div class="question">
+                                        <div class="select_box">
+                                            <span class="select_txt">语文</span><a class="xia" href="javascript:;"></a>
+                                            <div class="option">
+                                                <a class="current" href="javascript:;">语文</a>
+                                                <a href="javascript:;">数学</a>
+                                                <a href="javascript:;">英语</a>
+                                                <a href="javascript:;">物理</a>
+                                                <a href="javascript:;">化学</a>
+                                                <a href="javascript:;">生物</a>
+                                                <a href="javascript:;">政治</a>
+                                                <a href="javascript:;">历史</a>
+                                                <a href="javascript:;">地理</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li class="jiang">
+                                	<span>主讲人：</span>
+                                    <input class="editing-name" type="text" placeholder="王晓飞" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="micro-btn">
+                        	<a class="same" href="javascript:void(0);">保存</a>
+                            <a class="zanbu" href="javascript:;">暂不修改</a>
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="shuju" style="display:none;">
+                	<div class="batch_main">
+                    	<div class="shuju-micro clearfix">
+                            <div class="shuju-title clearfix">
+                                <div class="title-left">
+                                    <ul>
+                                        <li class="ti">标题: 语文文言文解析</li>
+                                        <li>主讲人: 董腾</li>
+                                    </ul>
+                                </div>
+                                <div class="title-right">
+                                    <h5>好评率</h5>
+                                    <h2>98.6%</h2>
+                                    <h2 style="display:none;">-</h2>
+                                </div>
+                            </div>
+                            
+                            <div class="amount">
+                            	<ul class="clearfix">
+                                	<li>总播放量: <em>376</em></li>
+                                    <li class="right">平均观看时长:<em>23.5</em>分钟</li>
+                                </ul>
+                            </div>
+                            <h4>播放次数最多的5个班级:</h4>
+                            <h4 style="display:none;">当前暂无该视频的播放数据…</h4>
+                            <ul>
+                            	<li>
+                                	<span>高一(2014级)5班: </span><em>68</em><i class="one"></i>
+                                </li>
+                                <li>
+                                	<span>高一(2014级)3班: </span><em>53</em><i class="two"></i>
+                                </li>
+                                <li>
+                                	<span>高一(2014级)2班: </span><em>43</em><i class="there"></i>
+                                </li>
+                                <li>
+                                	<span>高一(2014级)1班: </span><em>38</em><i class="four"></i>
+                                </li>
+                                <li>
+                                	<span>高一(2014级)4班: </span><em>25</em><i class="five"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="fabu" style="display:none;">
+                	<div class="batch_main">
+                    	<div class="upgrade-micro clearfix">
+                            <div class="upgrade-size">
+                            	<p>已成功发布"语文-文言文解析1"。</p>   
+                            </div>
+                        </div>
+                        <div class="micro-btn">
+                        	<a class="same" href="javascript:;">知道了</a>
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="capacity" style="display:none;">
+                	<div class="batch_main">
+                    	<div class="capacity-micro clearfix">
+                            <div class="capacity-size">
+                            	<table>
+                                	<tr>
+                                    	<th style="width:80px;">容量新增</th>
+                                        <th style="width:160px;">升级时间</th>
+                                        <th style="width:80px;">变动来源</th>
+                                    </tr>
+                                    <tr>
+                                    	<td>1024G</td>
+                                        <td>2015-07-22 12:45</td>
+                                        <td>购买容量</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>1024G</td>
+                                        <td>2015-07-22 12:45</td>
+                                        <td>开户新增</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>1024G</td>
+                                        <td>2015-07-22 12:45</td>
+                                        <td>购买容量</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>1024G</td>
+                                        <td>2015-07-22 12:45</td>
+                                        <td>开户新增</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>1024G</td>
+                                        <td>2015-07-22 12:45</td>
+                                        <td>开户新增</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>1024G</td>
+                                        <td>2015-07-22 12:45</td>
+                                        <td>开户新增</td>
+                                    </tr>
+                                </table>   
+                            </div>
+                        </div>
+                        <div class="micro-btn">
+                        	<a class="same" href="javascript:;">确定</a>
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="queren" style="display:none;">
+                	<div class="batch_main">
+                    	<div class="duoru-cheng clearfix">
+                            <div class="cheng-size">
+                            	<p>您即将删除"语文-文言文解析.mp4"，当前正在上传，删除不可恢复，是否确定？</p>   
+                            </div>
+                        </div>
+                        <div class="daoru-btn">
+                        	<a  href="javascript:;"></a>
+                            <a class="daoru-no" href="javascript:;"></a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+<script>
+	//下拉
+	$(document).ready(function(){
+	 $(document).on("click",".select_box",function(event){
+	 event.stopPropagation();
+	 $(this).find(".option").toggle();
+	$(this).parent().siblings().find(".option").hide();
+	});
+	$(document).on("click",function(event){
+	var eo=$(event.target);
+	if($(".select_box").is(":visible") && eo.attr("class")!="option" && !eo.parent(".option").length)
+	$('.option').hide();
+	});
+	/*赋值给文本框*/
+	$(document).on("click",".option a",function(){
+	var value=$(this).text();
+	$(this).parent().siblings(".select_txt").text(value);
+	$("#select_value").val(value)
+	})
+	})
+	
+	$(document).on("click",".other",function(e){
+		e.stopPropagation()
+		currentShow=$(this).next('.other-hide');
+		if(currentShow.is(':hidden')){
+			currentShow.show();
+		}else{
+			currentShow.hide();
+		}
+		/*$(".other-hide").hide();
+		if(currentShow.hasClass('currentShow')){
+			currentShow.removeClass('currentShow');
+		}else{
+			$('.currentShow').removeClass('currentShow');
+			currentShow.addClass('currentShow');
+			currentShow.toggle(0);
+		}*/
+	});
+	/*$(document).on("blur",".other",function(){
+		currentShow.hide(0);
+	})*/
+	$(document).click(function(){
+		$('.other-hide').hide();	
+	});
+	$(function(){
+		var zhi = $(".storage i").html();
+		if(zhi > 1900){
+			$(".insufficient").show();
+			//alert("zhi");
+			}
+			
+		else{
+			return false;
+			}
+	})
+	
+	//全选
+		$(document).on("click","#checkall",function () {//全选  
+			$("#playList :checkbox[name='checkname']").prop("checked",this.checked);
+			
+		}); 
+		
+		$("#playList tr td input").on("click",function(){
+			//var clickAll = true;
+			var checkBoxLength = $("#playList :checkbox[name='checkname']").length;
+			var checkBoxCheckedLength = $("#playList :checkbox[name='checkname']:checked").length;
+			var result = checkBoxLength === checkBoxCheckedLength;
+			$("#checkall").prop("checked",result);
+			
+		})
+		
+	
+	//进度条
+	var i = 0;
+	var progress_node_class = "progress"; 
+	function SetProgress(progress) { 
+		if (progress) { 
+			$("." + progress_node_class + " > i").css("width", String(progress) + "%"); 
+			$("." + progress_node_class).next("b").html(String(progress) + "%"); 
+		} 
+		
+	} 
+	var timer=null; 
+	function doProgress() { 
+		if (i > 100) { 
+			//alert("Progress Bar Finished!"); 
+			return; 
+		} 
+		
+		if (i <= 100) { 
+			timer = setTimeout("doProgress()", 100); 
+			SetProgress(i); 
+			i++; 
+		} 
+		if(i == 100){
+			$(".sudu").slideUp(0,function(){
+				$(".finish").slideDown(0);	
+			});	
+			//clearTimeout(timer);
+			$(".two-main b").text("下载完毕");
+		}
+	} 
+	$(document).ready(function() { 
+		doProgress(); 
+	});
+	$(document).on("click",".play-clear",function(){
+		var jqtr = $(this).closest(".two-main");
+		jqtr.slideUp(0,function(){jqtr.remove()});
+	});
+	$(document).on("click",".play-pic",function(){
+		var jqa = $(this);
+		jqa.removeClass("play-pic");
+		jqa.addClass("play-piced");
+		clearTimeout(timer);
+		$(this).parent().prev().find('b').text('已暂停');
+		$(".two-main i").addClass("red");
+		//alert(123)
+	});
+	$(document).on("click",".play-piced",function(){
+		var jqa = $(this);
+		jqa.addClass("play-pic");
+		jqa.removeClass("play-piced");
+		doProgress();
+		$(".two-main i").removeClass("red");
+		//$(this).parent().prev().find('b').text('暂停');
+	});
+</script>
+</body>
+</html>

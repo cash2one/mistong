@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+html { color: #000; overflow-y: scroll;}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, form, th, td {margin: 0; padding: 0;}
+body, button, input, select, textarea { font-family:"微软雅黑";}
+h1, h2, h3, h4, h5, h6 {font-size:12px;font-weight: normal;}
+ul, ol {list-style: none outside none;}
+a{text-decoration: none; color:#333;margin: 0; padding: 0;}
+a:hover{text-decoration:none;}
+u{ text-decoration:none}
+img{ margin:0; padding:0;border: 0 none; overflow:hidden;}
+table{border-collapse: collapse;border-spacing: 0;}
+.clearfix{clear:both; display:inline-block;}
+.commer{ width:409px; height:292px; margin:0 auto; position:relative;}
+.w_left{ width:168px; float:left;}
+.w_right{ width:812px; float:left; position:relative;}

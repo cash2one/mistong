@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/login.js" type="text/javascript"></script>
+<title>kuko个人中心</title>
+</head>
+
+<body>
+	<div class="main">      
+        <div class="content clearfix">
+        	<div class="w_left">
+            	<div class="lift">
+                	<h3><a href="javascript:;"><img src="images/index/user.png" width="79" height="79" /></a></h3>
+                	<ul>
+                    	<li><a class="home" href="index.html">首页</a></li>
+                        <li><a class="xun" href="xuntang.html">我要巡堂</a></li>
+                        <li><a class="culum" href="curriculum.html">课程管理</a></li>
+                        <li><a class="teach" href="teacher.html">教师管理</a></li>
+                        <li><a class="ban" href="class_stepfirst.html">班级管理</a></li>
+                        <li><a class="timetable" href="row_stepfirst.html">排课管理</a></li>
+                        <li><a class="analysis" href="analysis.html">教学分析</a></li>
+                        <li class="selected"><a class="member" href="javascript:;">个人中心(<span>4</span>)</a></li>
+                        <li><a class="help" href="javascript:;">使用帮助</a></li>
+                    </ul>
+                    <h4><a href="javascript:;"><img src="images/index/feedback.png" width="156" height="70" /></a></h4>
+                </div>
+            </div>
+            <div class="w_right">
+            	<div class="u_membercenter">
+                	<div class="membercenter">
+                        <ul class="clearfix">
+                            <li>
+                            	<dl>
+                                	<dt>已录入教师</dt>
+                                    <dd>8</dd>
+                                    <dd><a class="btn" href="javascript:;">查看老师信息</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                            	<dl>
+                                	<dt>已开课类别</dt>
+                                    <dd>30</dd>
+                                    <dd><a class="btn" href="javascript:;">查看课程类别</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                            	<dl>
+                                	<dt>已开班级</dt>
+                                    <dd>10</dd>
+                                    <dd><a class="btn" href="javascript:;">查看班级</a></dd>
+                                </dl>
+                            </li>
+                            <li class="safe">
+                            	<dl>
+                                	<dt>账户安全</dt>
+                                    <dd class="pass_du"><b class="di">低</b><span class="qiang"><i></i></span><b class="gao">高</b></dd>
+                                    <dd class="clearfix">
+                                    	<p class="phone_p"><label>手机:</label><span class="yi_b">已绑定</span></p>
+                                        <p class="mail_m"><label>邮箱:</label><span class="wei_b">未绑定</span></p>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wrap_back_membercenter">
+                    	<div class="back_membercenter">
+                            <ul id="tags" class="clearfix">
+                            	<li><a onClick="selectTag('tagContent0',this)" href="javascript:void(0)">个人资料</a></li>
+                                <li><a onClick="selectTag('tagContent1',this)" href="javascript:void(0)">账户安全</a></li>
+                                <li><a onClick="selectTag('tagContent2',this)" href="javascript:void(0)">消息中心(0)</a></li>
+                            	
+                            </ul>
+                        </div>
+                        
+                        <div id="tagContent">
+                        	<div class="news" id="defaultNews">
+                            	<ul>
+                                	<li class="clearfix">
+                                    	<dl class="clearfix">
+                                        	<dd class="shij">学校 2014-11-29 16:45</dd>
+                                            <dd class="quan"><img src="images/index/quan.png" width="8" height="8" /></dd>
+                                            <dd class="tongz"> 
+                                            	<img src="images/index/la.png" width="14" height="13" />
+                                                <span>
+                                                    通知：暑假结束后要进行一轮测验考试，以验证大家暑期的学习效果，具体的考试安排在2015年9月1日通知，
+                                                    请大家认真学习，并做好考试的复习准备。学习效果，具体的考试安排在2015年9月1日通知，请大家认
+                                                    真学习，并做好考试的复习准备。
+                                                </span>
+                                            </dd> 
+                                        </dl>
+                                    </li>
+                                    <li>
+                                    	<dl class="clearfix">
+                                        	<dd class="shij">我 2014-11-29 16:45</dd>
+                                            <dd class="quan"><img src="images/index/quan.png" width="8" height="8" /></dd>
+                                            <dd class="tongz"> 
+                                            	<img src="images/index/la.png" width="14" height="13" />
+                                                <span>
+                                                    通知：暑假结束后要进行一轮测验考试，以验证大家暑期的学习效果，具体的考试安排在2015年9月1日通知，
+                                                    请大家认真学习，并做好考试的复习准备。学习效果，具体的考试安排在2015年9月1日通知，请大家认
+                                                    真学习，并做好考试的复习准备。
+                                                </span>
+                                            </dd> 
+                                        </dl>
+                                    </li>
+                                    <li>
+                                    	<dl class="clearfix">
+                                        	<dd class="shij">同学 2014-11-29 16:45</dd>
+                                            <dd class="quan"><img src="images/index/quan.png" width="8" height="8" /></dd>
+                                            <dd class="tongz"> 
+                                            	<img src="images/index/la.png" width="14" height="13" />
+                                                <span>
+                                                    通知：暑假结束后要进行一轮测验考试，以验证大家暑期的学习效果，具体的考试安排在2015年9月1日通知，
+                                                    请大家认真学习，并做好考试的复习准备。学习效果，具体的考试安排在2015年9月1日通知，请大家认
+                                                    真学习，并做好考试的复习准备。
+                                                </span>
+                                            </dd> 
+                                        </dl>
+                                    </li>
+                                    <li>
+                                    	<dl class="clearfix">
+                                        	<dd class="shij">学校 2014-11-29 16:45</dd>
+                                            <dd class="quan"><img src="images/index/quan.png" width="8" height="8" /></dd>
+                                            <dd class="tongz"> 
+                                            	<img src="images/index/la.png" width="14" height="13" />
+                                                <span>
+                                                    通知：暑假结束后要进行一轮测验
+                                                </span>
+                                            </dd> 
+                                        </dl>
+                                    </li>
+                                    <li>
+                                    	<dl class="clearfix">
+                                        	<dd class="shij">学校 2014-11-29 16:45</dd>
+                                            <dd class="quan"><img src="images/index/quan.png" width="8" height="8" /></dd>
+                                            <dd class="tongz"> 
+                                            	<img src="images/index/la.png" width="14" height="13" />
+                                                <span>
+                                                    通知：暑假结束后要进行一轮测验考试，以验证大家暑期的学习效果，具体的考试安排在2015年9月1日通知，
+                                                    请大家认真学习，并做好考试的复习
+                                                </span>
+                                            </dd> 
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        	<div class="selectTag tagContent" id="tagContent0">
+                            	<div class="personal">
+                                	<ul class="clearfix">
+                                    	<li>
+                                        	<span>显示头像：</span>
+                                            <img src="images/index/pictrue.png" width="132" height="133" />
+                                            <p>修改头像的功能即将发布，敬请期待！</p>
+                                        </li>
+                                        <li class="data">
+                                        	<dl>
+                                            	<dd><label>真实姓名：</label>张三</dd>
+                                                <dd><label>性别：</label>男</dd>
+                                                <dd><label>生日：</label>1995-12-12</dd>
+                                                <dd><label>所在学校：</label>宁波镇海中学</dd>
+                                                <dd><label>所在班级：</label>高三（2）班</dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tagContent" id="tagContent1">
+                            	<div class="account">
+                                	<dl class="clearfix">
+                                    	<dt class="teacher">绑定QQ号：1323256478</dt>
+                                        <dd><a onClick="pupopen_qq()" href="javascript:;">修改</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                    	<dt class="teacher">设置手机提醒：13912345678</dt>
+                                        <dd><a onClick="pupopen_phone()" href="javascript:;">修改</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                    	<dt class="teacher">绑定电子邮箱：1323256478@qq.com</dt>
+                                        <dd><a onClick="pupopen_mail()" href="javascript:;">修改</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                    	<dt>绑定QQ号：</dt>
+                                        <dd><a onClick="pupopen_qq()" href="javascript:;">绑定</a></dd>
+                                        <dd>绑定后可用QQ号码登录酷课。</dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                    	<dt>设置手机提醒：</dt>
+                                        <dd><a onClick="pupopen_phone()" href="javascript:;">设置</a></dd>
+                                        <dd>设置后可接收到课程开课提醒。</dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                    	<dt>绑定电子邮箱：</dt>
+                                        <dd><a onClick="pupopen_mail()" href="javascript:;">绑定</a></dd>
+                                        <dd>绑定后可接收到最新课程的介绍。</dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                    	<dt>密码修改：</dt>
+                                        <dd><a onClick="pupopen_pass()" href="javascript:;">修改</a></dd>
+                                        <dd></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="tagContent" id="tagContent2">
+                            	<div>
+                                    <div class="tabList">
+                                        <ul class="clearfix">
+                                            <li class="selected selectLi" id="l1"><a href="javascript:;">学校消息(3)</a></li>
+                                            <li class="selectLi" id="l2"><a href="javascript:;">老师信息(1)</a></li>
+                                            <li class="selectLi" id="l3"><a href="javascript:;">酷课信息(0)</a></li>
+                                            <li class="selectLi" id="l4"><a href="javascript:;">订单信息(1)</a></li>
+                                            <li class="selectLi" id="l5"><a href="javascript:;">账户信息</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabCon">
+                                        <ul>
+                                            <li class="cur childli" id="i1">
+                                                <dl>
+                                                    <dd>
+                                                        ·通知：暑假结束后要进行一轮测验考试，以验证大家暑期的学习效果，具体的考试安排在2015年9月1日通知，请大家认真学习，并做好考试的复习准备。
+                                                        <p>宁波镇海中学  2014-11-29 16:14</p>
+                                                    </dd>
+                                                    <dd>
+                                                        ·通知：暑假结束后要进行一轮测验考试，以验证大家暑期的学习效果，具体的考试安排在2015年9月1日通知，请大家认真学习，并做好考试的复习准备。   
+                                                        <p>宁波镇海中学  2014-11-29 16:14</p>
+                                                    </dd>
+                                                    <dd class="du">
+                                                        (已读)通知：暑假结束后要进行一轮测验考试，以验证大家暑期的学习效果，具体的考试安排在2015年9月1日通知，请大家认真学习，并做好考试的复习准备。
+                                                        <p>宁波镇海中学  2014-11-29 16:14</p>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li style="display:none;" id="i2" class="childli">
+                                                <dl>
+                                                    <dd>
+                                                        ·支付：您的订单231232323423已经支付成功，包含12节课，可以开始学习咯！
+                                                    </dd>
+                                                    <dd class="du">
+                                                        (已读)取消：您的订单123123123123已经成功取消。   
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li style="display:none;" id="i4" class="childli">
+                                                <dl>
+                                                    <dd>
+                                                        ·QQ：您已成功绑定QQ号，可以使用QQ号来登录酷课啦。
+                                                    </dd>
+                                                    <dd class="du">
+                                                        (已读)手机：您已成功设置手机提醒，注意查收开课提醒喔。   
+                                                    </dd>
+                                                    <dd class="du">
+                                                        (已读)邮箱：您已成功绑定电子邮箱，注意查收新课程的介绍信息喔。
+                                                    </dd>
+                                                    <dd class="du">
+                                                        密码：您已修改密码，要记住新密码喔！
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--修改密码-->
+                <div class="modify" id="pass">
+                	<div class="top1">
+                        <div class="modify_header">
+                            <h5>修改密码</h5>
+                            <a href="javascript:;" onclick="pupclose_pass()">x</a>
+                        </div>
+                    </div>
+                    <div class="center1">
+                        <div class="modify_main">
+                            <ul>
+                                <li class="clearfix">
+                                    <label>新密码:</label>
+                                    <input class="ming" id="password" type="text" />
+                                    <span class="cuo_qd" id="error_pwd" style=" color:#f3981d; display:none;">密码不能为空！</span>
+                                </li>
+                                <li class="clearfix">
+                                    <label>确认新密码:</label>
+                                    <input class="ming" id="repeat_pwd" type="text" />
+                                    <span class="cuo" id="error_repeatPwd" style=" color:#f3981d; display:none;">重复密码不能为空！</span>
+                                </li>
+                            </ul>
+                            <div class="tishi">
+                                提醒：长度建议6-8位，以字母、数字、符号的组合为佳。
+                            </div>
+                            <div class="modify_btn clearfix">
+                                <a class="login_setPwd btn" href="javascript:;">提交</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom1"></div>
+                </div>
+                
+                <!--绑定QQ号-->
+                <div class="Binding_qq" id="qq">
+                	<div class="top1">
+                        <div class="Binding_qq_header">
+                            <h5>绑定QQ号码</h5>
+                            <a href="javascript:;" onclick="pupclose_qq()">x</a>
+                        </div>
+                    </div>
+                    <div class="center1">
+                        <div class="Binding_qq_main">
+                            <h4>你是否需要关联你的QQ号？关联之后，你可以直接使用QQ号登录KUKO（酷课），密码不变 。</h4>
+                            <ul>
+                                
+                                <li class=" pass zhao_qq clearfix">
+                                    <label>您的QQ号码为:</label>
+                                    <input class="ming" id="qq" type="text" />
+                                    <span class="cuo" id="error_qq" style=" color:#f3981d; display:none;">QQ号不能为空！</span>
+                                </li>
+                            </ul>
+                            <div class="Binding_qq_btn clearfix">
+                                <a class="login_qq btn" href="javascript:;">提交</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom1"></div>
+                </div>
+                
+                <!--设置手机号码-->
+                <div class="phone" id="phone">
+                	<div class="top1">
+                        <div class="phone_header">
+                            <h5>设置手机号码</h5>
+                            <a href="javascript:;" onclick="pupclose_phone()">x</a>
+                        </div>
+                    </div>
+                    <div class="center1">
+                    	<div class="phone_main">
+                    	<h4>设置之后，在您所报名的课程开课前10分钟，会有短信通知您。</h4>
+                        <ul>
+                            <li class="zhao clearfix">
+                                <label>您的手机号码为:</label>
+                                <input class="ming" id="phone" type="text" />
+                                <span class="cuo" id="error_phone" style=" color:#f3981d; display:none;">手机号码不能为空！</span>
+                            </li>
+                            <li class="zhao clearfix">
+                                <label>验证码:</label>
+                                <input id="ma" class="code" type="text" />
+                                <a class="code_hover" href="javascript:;"></a>
+                                <a class="code_click" href="javascript:;">重新获取(58秒)</a>
+                                <span class="cuo" id="error_ma" style=" color:#f3981d; display:none;">验证码错误</span>
+                            </li>
+                        </ul>
+                        <div class="phone_btn clearfix">
+                        	<a class="login_phone btn" href="javascript:;">提交</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="bottom1"></div>
+                </div>
+                
+                <!--绑定电子邮箱-->
+                <div class="mail" id="mail">
+                	<div class="top1">
+                        <div class="mail_header">
+                            <h5>绑定电子邮箱</h5>
+                            <a href="javascript:;" onclick="pupclose_mail()">x</a>
+                        </div>
+                    </div>
+                    <div class="center1">
+                    	<div class="mail_main">
+                    	<h4>绑定之后，您就可以接收到新课程的介绍信息。</h4>
+                        <ul>
+                            <li class="zhao_mail clearfix">
+                                <label>您的邮箱为:</label>
+                                <input class="ming"  id="email" type="text" />
+                                <span class="cuo" id="error_email" style=" color:#f3981d; display:none;">如QQ邮箱，123456@qq.com</span>
+                            </li>
+                        </ul>
+                        <div class="mail_btn clearfix">
+                        	<a class="login_email btn" href="javascript:;">提交</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="bottom1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+	$('.btn').hover(
+	  function(){
+		$(this).addClass('btnHover');
+	  },
+	  function(){
+		$(this).removeClass('btnHover');
+	  }
+	);
+	
+	$('.btn').click(function(){
+	  $(this).addClass('btnGray');
+	});
+	$('.btn_two').hover(
+	  function(){
+		$(this).addClass('btnHover_two');
+	  },
+	  function(){
+		$(this).removeClass('btnHover_two');
+	  }
+	);
+	
+	$('.btn_two').click(function(){
+	  $(this).addClass('btnGray_two');
+	});
+	//hover事件
+	$(function(){
+	$(".clsTitle").hover(function(){
+	$(".clsContent").show();
+	},
+	function(){
+	$(".clsContent").hide();
+	})
+	}) 
+	$(function(){
+	$(".clsTitle1").hover(function(){
+	$(".clsContent1").show();
+	},
+	function(){
+	$(".clsContent1").hide();
+	})
+	}) 
+	
+	//切换
+	function selectTag(showContent,selfObj){
+		var tag = document.getElementById("tags").getElementsByTagName("li");
+		var taglength = tag.length;
+		for(i=0; i<taglength; i++){
+			tag[i].className = "";
+		}
+		selfObj.parentNode.className = "selectTag";
+		
+		for(i=0; j=document.getElementById("tagContent"+i); i++){
+			j.style.display = "none";
+        }
+
+        document.getElementById("defaultNews").style.display = "none";
+		document.getElementById(showContent).style.display = "block";
+	}
+	$(document).ready(function(){
+		$("ul#navigation li a").click(function() {
+			$("ul#navigation li").removeClass("selected");
+			$(this).parents().addClass("selected");
+			return false;
+		});
+	});
+	//点击弹出
+	function show() {
+        if (document.getElementById('div2').style.display == 'block')
+            document.getElementById('div2').style.display = 'none';
+        else
+            document.getElementById('div2').style.display = 'block'
+    }
+	//账户
+	function pupopen_qq(){
+	 document.getElementById("qq").style.display="block";
+	 }
+	function pupclose_qq(){
+		document.getElementById("qq").style.display="none";			
+	}
+	function pupopen_mail(){
+	 document.getElementById("mail").style.display="block";
+	 }
+	function pupclose_mail(){
+		document.getElementById("mail").style.display="none";			
+	}
+	function pupopen_phone(){
+	 document.getElementById("phone").style.display="block";
+	 }
+	function pupclose_phone(){
+		document.getElementById("phone").style.display="none";			
+	}
+	function pupopen_pass(){
+	 document.getElementById("pass").style.display="block";
+	 }
+	function pupclose_pass(){
+		document.getElementById("pass").style.display="none";			
+	}
+	$(function(){
+		$(".selectLi").click(function(){
+			$(".selectLi").removeClass("selected");
+			$(this).addClass("selected");
+			var id = $(this).attr("id").substring(1);
+			$(".childli").css("display","none");
+			$("#i" + id).css("display","block");
+		});	
+	});
+</script>
+</body>
+</html>

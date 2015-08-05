@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<title>kuko首页</title>
+</head>
+
+<body>
+	<div class="main">     
+        <div class="content clearfix">
+        	<div class="w_left">
+            	<div class="lift">
+                	<h3><a href="javascript:;"><img src="images/index/user.png" width="79" height="79" /></a></h3>
+                	<ul>
+                    	<li class="selected"><a class="home" href="javascript:;">首页</a></li>
+                        <li><a class="timetable" href="my_schedule.html">我的课表(<span>8</span>)</a></li>
+                        <li><a class="analysis" href="analysis.html">课程效果分析</a></li>
+                        <li><a class="member" href="u_membercenter.html">个人中心(<span>4</span>)</a></li>
+                        <li><a class="help" href="javascript:;">使用帮助</a></li>
+                    </ul>
+                    <h4><a href="javascript:;"><img src="images/index/feedback.png" width="156" height="70" /></a></h4>
+                </div>
+            </div>
+            <div class="w_right">
+            	<div class="all">
+                	<div class="course clearfix">
+                		<h2>全部课程</h2>
+                        <div class="sign">
+                        	<ul class="clearfix">
+                                <li class="btn">
+                                	<a class="date_hover" href="date.html">周视图</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrap_back">
+                    	<div class="back">
+                            <ul id="tags" class="clearfix">
+                            	<li><a onClick="selectTag('tagContent0',this)" href="javascript:void(0)">昨天[0]  (周三，2014-11-26)</a></li>
+                                <li class="selectTag"><a onClick="selectTag('tagContent1',this)" href="javascript:void(0)">今天[<span>12</span>]  (周四，2014-11-27)</a></li>
+                                <li><a onClick="selectTag('tagContent2',this)" href="javascript:void(0)">明天[<span>8</span>]  (周五，2014-11-28) </a></li>
+                            </ul>
+                        </div>
+                        
+                        <div id="tagContent">
+                        	<div class="tagContent" id="tagContent0">
+                            	<div class="subject">
+                                	<ul class="clearfix" >
+                                    	<li>
+                                        	<dl class="row clearfix">
+                                            	<dt class="morning"><span>上午<p>(共4节课)</p></span></dt>
+                                            	<dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">已结果</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">已结果</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">已结果</a></b></p>
+                                                </dd>
+                                            </dl>
+                                            <dl class="row clearfix">
+                                            	<dt class="noon"><span>下午<p>(共4节课)</p></span></dt>
+                                            	<dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="money"><b>￥12.00</b></p>
+                                                        <p class="start">
+                                                        	<i>今天上"不会爱了"课程！</i>
+                                                            <br />
+                                                        	<span>08:30开始</span><b>已报名50人</b>
+                                                        </p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                            </dl>
+                                            <dl class="row clearfix">
+                                            	<dt class="night"><span>晚上<p>(共4节课)</p></span></dt>
+                                            	<dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="money"><b>￥12.00</b></p>
+                                                        <p class="start">
+                                                        	<i>今天上"不会爱了"课程！</i>
+                                                            <br />
+                                                        	<span>08:30开始</span><b>已报名50人</b>
+                                                        </p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="selectTag tagContent" id="tagContent1" style="display:block;">
+                            	<div class="subject">
+                                	<ul class="clearfix" >
+                                    	<li>
+                                        	<dl class="row clearfix">
+                                            	<dt class="morning"><span>上午<p>(共4节课)</p></span></dt>
+                                            	<dd class="kong">上午没有排课！</dd>
+                                            </dl>
+                                            <dl class="row clearfix">
+                                            	<dt class="noon"><span>下午<p>(共4节课)</p></span></dt>
+                                            	<dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="money"><b>￥12.00</b></p>
+                                                        <p class="start">
+                                                        	<i>今天上"不会爱了"课程！</i>
+                                                            <br />
+                                                        	<span>08:30开始</span><b>已报名50人</b>
+                                                        </p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                            </dl>
+                                            <dl class="row clearfix">
+                                            	<dt class="night"><span>晚上<p>(共4节课)</p></span></dt>
+                                            	<dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="money"><b>￥12.00</b></p>
+                                                        <p class="start">
+                                                        	<i>今天上"不会爱了"课程！</i>
+                                                            <br />
+                                                        	<span>08:30开始</span><b>已报名50人</b>
+                                                        </p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tagContent" id="tagContent2">
+                            	<div class="subject">
+                                	<ul class="clearfix" >
+                                    	<li>
+                                        	<dl class="row clearfix">
+                                            	<dt class="morning"><span>上午<p>(共4节课)</p></span></dt>
+                                            	<dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">已结果</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">已结果</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">已结果</a></b></p>
+                                                </dd>
+                                            </dl>
+                                            <dl class="row clearfix">
+                                            	<dt class="noon"><span>下午<p>(共4节课)</p></span></dt>
+                                            	<dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="money"><b>￥12.00</b></p>
+                                                        <p class="start">
+                                                        	<i>今天上"不会爱了"课程！</i>
+                                                            <br />
+                                                        	<span>08:30开始</span><b>已报名50人</b>
+                                                        </p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a href="javascript:;">未开始</a></b></p>
+                                                </dd>
+                                            </dl>
+                                            <dl class="row clearfix">
+                                            	<dt class="night"><span>晚上<p>(共4节课)</p></span></dt>
+                                            	<dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="money"><b>￥12.00</b></p>
+                                                        <p class="start">
+                                                        	<i>今天上"不会爱了"课程！</i>
+                                                            <br />
+                                                        	<span>08:30开始</span><b>已报名50人</b>
+                                                        </p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <img src="images/index/kemu.png" width="157" height="100" />
+                                                        <p class="baoming"><img src="images/index/baom.png" width="61" height="34" /></p>
+                                                        <p class="start"><span>08:30开始</span><b>已报名50人</b></p>
+                                                    </a>
+                                                    <p class="speaker"><span>主讲：赵松涛</span><b><a class="btn" href="javascript:;">进入课堂</a></b></p>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+        	
+        </div>
+    </div>
+<script>
+	$('.btn').hover(
+	  function(){
+		$(this).addClass('btnHover');
+	  },
+	  function(){
+		$(this).removeClass('btnHover');
+	  }
+	);
+	
+	$('.btn').click(function(){
+	  $(this).addClass('btnGray');
+	});
+	$('.btn_two').hover(
+	  function(){
+		$(this).addClass('btnHover_two');
+	  },
+	  function(){
+		$(this).removeClass('btnHover_two');
+	  }
+	);
+	
+	$('.btn_two').click(function(){
+	  $(this).addClass('btnGray_two');
+	});
+	//hover事件
+	$(function(){
+	$(".clsTitle").hover(function(){
+	$(".clsContent").show();
+	},
+	function(){
+	$(".clsContent").hide();
+	})
+	}) 
+	$(function(){
+	$(".clsTitle1").hover(function(){
+	$(".clsContent1").show();
+	},
+	function(){
+	$(".clsContent1").hide();
+	})
+	}) 
+	
+	//切换
+	function selectTag(showContent,selfObj){
+		var tag = document.getElementById("tags").getElementsByTagName("li");
+		var taglength = tag.length;
+		for(i=0; i<taglength; i++){
+			tag[i].className = "";
+		}
+		selfObj.parentNode.className = "selectTag";
+		
+		for(i=0; j=document.getElementById("tagContent"+i); i++){
+			j.style.display = "none";
+		}
+		document.getElementById(showContent).style.display = "block";
+	}
+	//点击弹出
+	function show() {
+        if (document.getElementById('div2').style.display == 'block')
+            document.getElementById('div2').style.display = 'none';
+        else
+            document.getElementById('div2').style.display = 'block'
+    }
+</script>
+</body>
+</html>

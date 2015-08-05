@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<title>kuko我的课表</title>
+</head>
+
+<body>
+	<div class="main">
+        <div class="content clearfix">
+        	<div class="w_left">
+            	<div class="lift">
+                	<h3><a href="javascript:;"><img src="images/index/user.png" width="79" height="79" /></a></h3>
+                	<ul>
+                    	<li><a class="home" href="index.html">首页</a></li>
+                        <li class="selected"><a class="timetable" href="javascript:;">我的课表(<span>8</span>)</a></li>
+                        <li><a class="analysis" href="analysis.html">课程效果分析</a></li>
+                        <li><a class="member" href="u_membercenter.html">个人中心(<span>4</span>)</a></li>
+                        <li><a class="help" href="javascript:;">使用帮助</a></li>
+                    </ul>
+                    <h4><a href="javascript:;"><img src="images/index/feedback.png" width="156" height="70" /></a></h4>
+                </div>
+            </div>
+            <div class="w_right">
+            	<div class="all">
+                	<div class="course clearfix">
+                		<h2>全部课程</h2>
+                        <div class="sign">
+                        	<ul class="clearfix">
+                                <li class="btn clsTitle1">
+                                	<a class="look" href="history_schedule.html">查看历史课程</a>
+                                </li>
+                                <li class="btn">
+                                	<a class="date" href="date.html">周视图</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrap_back">
+                    	<div class="back">
+                            <ul id="tags" class="clearfix">
+                            	<li><a onClick="selectTag('tagContent0',this)" href="javascript:void(0)">昨天[0]  (周三，2014-11-26)</a></li>
+                                <li class="selectTag"><a onClick="selectTag('tagContent1',this)" href="javascript:void(0)">今天[<span>12</span>]  (周四，2014-11-27)</a></li>
+                                <li><a onClick="selectTag('tagContent2',this)" href="javascript:void(0)">明天[<span>8</span>]  (周五，2014-11-28) </a></li>
+                            </ul>
+                        </div>
+                        
+                        <div id="tagContent">
+                        	<div class="tagContent" id="tagContent0">
+                            	<div class="my_schedule">
+                                	<h2>全天都没有排课哟，小伙伴们开心起来！</h2>
+                                </div>
+                            </div>
+                            <div class="selectTag tagContent" id="tagContent1" style="display:block;">
+                            	<div class="my_schedule">
+                                	<ul>
+                                    	<li class="clearfix">
+                                        	<dd class="kaishi">08:00开始</dd>
+                                            <dd class="tupian"><img src="images/index/kemu4.png" width="157" height="100" /></dd>
+                                            <dd>
+                                            	<h5><a href="schedule.html">语文-古诗词专项</a></h5>
+                                                <p>牛哥带你更好更全面的学习古诗词！牛哥带你更好更全面的学习古诗词！</p>
+                                                <p>主讲老师：牛哥</p>
+                                                <a class="jieshu" href="javascript:;">已结束</a>
+                                            </dd>
+                                        </li>
+                                        <li class="clearfix">
+                                        	<dd class="kaishi">08:00开始</dd>
+                                            <dd class="tupian"><img src="images/index/kemu4.png" width="157" height="100" /></dd>
+                                            <dd>
+                                            	<h5><a href="javascript:;">语文-古诗词专项</a></h5>
+                                                <p>牛哥带你更好更全面的学习古诗词！牛哥带你更好更全面的学习古诗词！</p>
+                                                <p>主讲老师：牛哥</p>
+                                                <a class="btn" href="javascript:;">进入课堂</a>
+                                            </dd>
+                                        </li>
+                                        <li class="clearfix">
+                                        	<dd class="kaishi">08:00开始</dd>
+                                            <dd class="tupian"><img src="images/index/kemu4.png" width="157" height="100" /></dd>
+                                            <dd>
+                                            	<h5><a href="javascript:;">语文-古诗词专项</a></h5>
+                                                <p>牛哥带你更好更全面的学习古诗词！牛哥带你更好更全面的学习古诗词！</p>
+                                                <p>主讲老师：牛哥</p>
+                                                <a class="jieshu" href="javascript:;">未开始</a>
+                                            </dd>
+                                        </li>
+                                        <li class="clearfix">
+                                        	<dd class="kaishi">08:00开始</dd>
+                                            <dd class="tupian"><img src="images/index/kemu4.png" width="157" height="100" /></dd>
+                                            <dd>
+                                            	<h5><a href="javascript:;">语文-古诗词专项</a></h5>
+                                                <p>牛哥带你更好更全面的学习古诗词！牛哥带你更好更全面的学习古诗词！</p>
+                                                <p>主讲老师：牛哥</p>
+                                                <a class="jieshu" href="javascript:;">未开始</a><a class="btn" href="preparation.html">我要备课</a>
+                                                <a class="btn" href="preparation.html#work">布置作业</a>
+                                            </dd>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tagContent" id="tagContent2">
+                            	<div class="my_schedule">
+                                	<h2>全天都没有排课哟，小伙伴们开心起来！</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+	$('.btn').hover(
+	  function(){
+		$(this).addClass('btnHover');
+	  },
+	  function(){
+		$(this).removeClass('btnHover');
+	  }
+	);
+	
+	$('.btn').click(function(){
+	  $(this).addClass('btnGray');
+	});
+	$('.btn_two').hover(
+	  function(){
+		$(this).addClass('btnHover_two');
+	  },
+	  function(){
+		$(this).removeClass('btnHover_two');
+	  }
+	);
+	
+	$('.btn_two').click(function(){
+	  $(this).addClass('btnGray_two');
+	});
+	//hover事件
+	$(function(){
+	$(".clsTitle").hover(function(){
+	$(".clsContent").show();
+	},
+	function(){
+	$(".clsContent").hide();
+	})
+	}) 
+	$(function(){
+	$(".clsTitle1").hover(function(){
+	$(".clsContent1").show();
+	},
+	function(){
+	$(".clsContent1").hide();
+	})
+	}) 
+	
+	//切换
+	function selectTag(showContent,selfObj){
+		var tag = document.getElementById("tags").getElementsByTagName("li");
+		var taglength = tag.length;
+		for(i=0; i<taglength; i++){
+			tag[i].className = "";
+		}
+		selfObj.parentNode.className = "selectTag";
+		
+		for(i=0; j=document.getElementById("tagContent"+i); i++){
+			j.style.display = "none";
+		}
+		document.getElementById(showContent).style.display = "block";
+	}
+	//点击弹出
+	function show() {
+        if (document.getElementById('div2').style.display == 'block')
+            document.getElementById('div2').style.display = 'none';
+        else
+            document.getElementById('div2').style.display = 'block'
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/flying.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/zzsc.js"></script>
+<script src="js/AC_RunActiveContent.js" language="javascript"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script language="JavaScript" type="text/javascript">
+	var flashvars={
+		remote_server: "rtmp://218.59.144.147/vod",
+		//video_path: "http://127.0.0.1/videoplay/11.19zhaosongtao01.f4v",
+		video_path: "mp4:/ewt360/bbs/20150116muhouxuanchuan.mp4",
+		buffer_time: 5,
+		auto_play: 1,
+		preview_pic: "../images/mian/preview.jpg",
+		video_id: "video_id123",
+		user_id: "user_id123",
+		need_analyze: 1,
+		refer_url: document.location.href,
+		server_config_ver:"0.2"
+	}
+	var flashvars_str=""
+	for (var i in flashvars){
+		if(flashvars_str!=""){
+			flashvars_str+="&"
+		}
+		flashvars_str+=(i+"="+flashvars[i])
+	}
+	function switchVideo(){
+		var remote_server="rtmp://218.59.144.147/vod";
+		//var video_path="mp4:/ewt360/files/20140522mp4/congqiang04.f4v"
+		var video_path="mp4:/ewt360/files/20131213mp4/maoxianqin07.f4v"
+		thisMovie("videoPlayer").switchVideo(remote_server,video_path)
+	}
+
+	function thisMovie(movieName) {
+		if (navigator.appName.indexOf("Microsoft") != -1) {
+			return window[movieName]
+		}
+		else {
+			return document[movieName]
+		}
+	}
+	//
+	document.onkeyup=function(event){
+		if(event.keyCode==32){
+			thisMovie("videoPlayer").switchPause()
+		}
+	}
+</script>
+<title>kuko学院点播视频播放</title>
+</head>
+
+<body>
+	<div class="commer">
+    	<div class="header clearfix">
+        	<div class="logo">
+                <a href="javascript:;">
+                    <img src="images/main/login.png" width="255" height="33" />
+                </a>
+            </div>
+            <div class="user">
+            	<ul class="clearfix">
+                	<li><a id="btn1" href="javascript:;">马上登录</a></li>
+                    <li class="line"></li>
+                    <li><a href="register.html">立即注册</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="nav-zong" id="nav_main">
+        	<div class="nav">
+            	<ul>
+                	<li>
+                    	<div class="bm">
+                        	<div class="inner">
+                        		<span></span>
+                                <a href="index.html">首页</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href="live.html">直播间</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="selected">
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href="javascript:;">点播间</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href="college.html">学院派</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href=".">答疑派</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clsTitle" id="collectBox">
+                    <a class="lan" href="study-kong.html">
+                        学习篮子（<span>5</span>）
+                    </a>
+                    <div class="tan">
+                    	<p>您的学习篮子里已有<span>8</span>节课程，快去确认报名吧！</p>
+                        <a class="sure" href="study.html">确认报名</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+        	<div class="play-bread clearfix">
+                <div class="bread-left">
+                    <a href="javascript:;">首页</a>
+                    <span>></span>
+                    <a href="javascript:;">高中年级</a>
+                    <span>></span>
+                    <a href="javascript:;">语文</a>
+                    <span>></span>
+                    <a href="javascript:;">语病</a>
+                    <span>></span>
+                    <a href="javascript:;">语病专项突破（一）</a>
+                </div>
+            </div>
+            <div class="play clearfix">
+            	<div class="play-left">
+                	<div>
+						<script language="JavaScript" type="text/javascript">
+                            AC_FL_RunContent(
+                                'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,45,0',
+                                'width', '640',
+                                'height', '388',
+                                'src', '../swf/videoPlayer?'+Math.random(),
+                                'flashvars',flashvars_str,
+                                'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+                                'wmode', 'window',
+                                'devicefont', 'false',
+                                'id', 'videoPlayer',
+                                'bgcolor', '#000000',
+                                'name', 'videoPlayer',
+                                'menu', 'false',
+                                'allowScriptAccess','always',
+                                'allowFullScreen','true',
+                                'movie', 'videoPlayer',
+                                'salign', ''
+                                ); 	
+                        
+                        </script>
+                    </div>
+                    <div class="play-back" id="album_detail_list">
+                    	<ul class="clearfix">
+                        	<li>总播放数：2180次</li>
+                            <li class="play-user">
+                            	<a class="play-zan like" href="javascript:;"></a>
+                                <em>1880</em>
+                                <a class="play-hei" href="javascript:;"></a>
+                                <a class="play-shou" href="javascript:;"></a>
+                                <i>收藏</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="play-right">
+                	<div class="neirong">
+                    	<h2>本课程内容</h2>
+                        <ul>
+                        	<li><i>1</i><a href="javascript:;">第一节 牛顿第一定律</a><span>已学习</span></li>
+                            <li><i>2</i><a href="javascript:;">第一节 牛顿第一定律</a><span>已学习</span></li>
+                            <li class="selected"><i>3</i><a href="javascript:;">第一节 牛顿第一定律</a><span>正在播放</span></li>
+                            <li><i>4</i><a href="javascript:;">第一节 牛顿第一定律</a><span></span></li>
+                            <li><i>5</i><a href="javascript:;">第一节 牛顿第一定律</a><span></span></li>
+                            <li><i>6</i><a href="javascript:;">第一节 牛顿第一定律</a><span></span></li>
+                            <li><i>7</i><a href="javascript:;">第一节 牛顿第一定律</a><span></span></li>
+                            <li><i>8</i><a href="javascript:;">第一节 牛顿第一定律</a><span></span></li>
+                            <li><i>9</i><a href="javascript:;">第一节 牛顿第一定律</a><span></span></li>
+                            <li><i>10</i><a href="javascript:;">第一节 牛顿第一定律</a><span></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="copyright">
+            	<ul>
+                	<li><img src="images/main/cnnic.png" width="127" height="47" /></li>
+                    <li><img src="images/main/hy_124x47.png" width="124" height="47" /></li>
+                	<li>
+                    	<p>Copyright © 2015  杭州狮说教育科技有限公司  版权所有   浙ICP备14032235号</p>
+                    	<p class="foot-li">
+                        	<img src="images/main/1.png" width="16" height="16" />客服电话：4000-136-070
+                        	<span><img src="images/main/2.png" width="14" height="17" />客服QQ群：374465304</span>
+                        </p>
+                    </li>
+                </ul>
+                <span></span>
+            </div>
+        </div>
+    </div>
+<script>
+	$(".play-zan").on("mouseover",function(){
+		$(".play-hei").slideDown(150)
+		$(".play-zan,.play-hei").on("mouseleave",function(){
+			setTimeout(function(){
+				if($(".play-zan:hover,.play-hei:hover").length == 0)
+				{
+					$(".play-hei").slideUp(150);
+				}
+			},10);
+		});
+	});
+$(function(){
+		// 专辑详细 删除 点赞
+		$('a.like').on('click',function(){ //专辑点赞
+			var _this = $(this),_thisVal = parseInt(_this.next('em').text());
+					_this.next('em').text(_thisVal+1);
+					_this.off('click').addClass('liked').removeClass('like');
+			
+		});
+	});	
+</script>
+</body>
+</html>

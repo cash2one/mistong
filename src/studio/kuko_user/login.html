@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/login.js" type="text/javascript"></script>
+<title>登录</title>
+<script>
+	//鼠标点击click
+	window.onload = function(){
+		var divs = document.getElementsByTagName(".jian");
+		var len = divs.length;
+		for(var i=0;i<len;i++){
+			divs[i].onclick = function(){
+				for(var j=0;j<len;j++){
+					divs[j].style.backgroundColor = "black";
+				}
+				this.style.backgroundColor = "red";
+			};
+		}
+	};
+</script>
+</head>
+
+<body>
+	<div class="commer">
+    	<div class="header">
+        	<img src="images/login_logo.png" width="409" height="128" />
+            <a class="jian" href="javascript:;"><img src="images/jian.png" width="12" height="2" /></a>
+            <a class="close" href="javascript:;"><img src="images/cha.png" width="12" height="10" /></a>
+        </div>
+        <div class="main">
+        	<form>
+            	<div class="name">
+                    <input type="text" id="name" placeholder="输入学习卡号或者绑定的QQ号" />
+                    <b>×</b>
+                    <span id="error_name">账号输错啦！</span>
+                </div>
+                <div class="pass">
+                    <input type="text" placeholder="输入密码" />
+                    <span id="error_pwd">密码输错啦！</span>
+                </div>
+                <div class="box clearfix">
+                	<dl>
+                        <dd class="jizhu"><input class="check" type="checkbox" />记住密码</dd>
+                        <dd class="zidong"><input class="check" type="checkbox" />自动登录</dd>
+                        <dd class="wangji"><a href="javascripe:;">忘记密码</a></dd>
+                    </dl>
+                </div>
+                <div class="button">
+                    <input type="submit" class="login_but" value="登录">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

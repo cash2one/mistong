@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="layer/layer.min.js" type="text/javascript"></script>
+<script src="layer/layer.js" type="text/javascript"></script>
+<title>kuko花名册</title>
+</head>
+
+<body>
+	<div class="main">     
+        <div class="content clearfix">
+        	<div class="w_left">
+            	<div class="lift">
+                	<h3><a href="javascript:;"><img src="images/index/user.png" width="79" height="79" /></a></h3>
+                	<ul>
+                    	<li><a class="home" href="index.html">首页</a></li>
+                        <li><a class="xun" href="xuntang.html">我要巡堂</a></li>
+                        <li><a class="culum" href="curriculum.html">课程管理</a></li>
+                        <li><a class="teach" href="teacher.html">教师管理</a></li>
+                        <li class="selected"><a class="roster" href="javascript::">学生花名册</a></li>
+                        <li><a class="ban" href="class_stepfirst.html">班级管理</a></li>
+                        <li><a class="timetable" href="row_stepfirst.html">排课管理</a></li>
+                        <li><a class="analysis" href="analysis.html">教学分析</a></li>
+                        <li><a class="member" href="u_membercenter.html">个人中心(<span>4</span>)</a></li>
+                    </ul>
+                    <h4><a href="javascript:;"><img src="images/index/feedback.png" width="156" height="70" /></a></h4>
+                </div>
+            </div>
+            <div class="w_right">
+            	<div class="all">
+                	<div class="course clearfix">
+                		<h2>高二（1）班</h2>
+                        <span>人数：46</span>
+                        <a href="roster.html">返回上一页</a>
+                    </div>
+                   
+                    <div class="roster-zong">
+                    	<div class="cate">
+                            <a class="add-xue" href="javascript:;">新增学生</a><a href="javascript:;" class="tan-btn">一键导入本校学生</a>
+                        </div>
+                    	<div class="teacher_new clearfix" id="playList">
+                            <table border="0">
+                                <tr>
+                                    <th style="width:40px;"></th>
+                                    <th style="width:102px;">分配卡号</th>
+                                    <th style="width:166px;">姓名</th>
+                                    <th style="width:156px;">出勤率</th>
+                                    <th style="width:156px;">最后更新时间</th>
+                                    <th style="width:120px;">操作</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="checkname" /></td>
+                                    <td>1234567892</td>
+                                    <td>李晓明</td>
+                                    <td><a class="rate" href="roster-work.html">75%</a></td>
+                                    <td>2015-1-30  10:00</td>
+                                    <td><a class="edit show" href="javascript:;">编辑</a><a class="clear" href="javascript:;">删除</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="checkname" /></td>
+                                    <td>1234567892</td>
+                                    <td>李晓明</td>
+                                    <td><a class="rate" href="roster-work.html">75%</a></td>
+                                    <td>2015-1-30  10:00</td>
+                                    <td><a class="edit show" href="javascript:;">编辑</a><a class="clear" href="javascript:;">删除</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="checkname" /></td>
+                                    <td>1234567892</td>
+                                    <td>李晓明</td>
+                                    <td><a class="rate" href="roster-work.html">75%</a></td>
+                                    <td>2015-1-30  10:00</td>
+                                    <td><a class="edit show" href="javascript:;">编辑</a><a class="clear" href="javascript:;">删除</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="checkname" /></td>
+                                    <td>1234567892</td>
+                                    <td>李晓明</td>
+                                    <td><a class="rate" href="roster-work.html">75%</a></td>
+                                    <td>2015-1-30  10:00</td>
+                                    <td><a class="edit show" href="javascript:;">编辑</a><a class="clear" href="javascript:;">删除</a></td>
+                                </tr>
+                            </table>
+                            <ul>
+                                <li class="roster-left"><input type="checkbox" name="browser-all" id="checkall" /><span>全选</span></li>
+                                <li class="roster-right"><a class="clear-more" href="javascript:;">删除</a></li>
+                            </ul>
+                    	</div>
+                    	<div class="my_order_footer clearfix">
+                                <div class="pag_num">
+                                    第1-8条/共2条
+                                </div>
+                                <div class="pag_right">
+                                    <a class="nextPage" href="javascript:;">上一页</a>
+                                    <a href="javascript:;">第2页/共3页 </a>
+                                    <a class="nextPage" href="javascript:;">下一页</a>                  
+                                </div>
+                            </div>
+                    	</div>
+                	</div>
+                
+                <div class="benxiao" style="display:none;">
+                    <div class="batch_main">
+                        <div class="batch_new">
+                            <input type="text" />
+                            <a href="javascript:;">浏览</a>
+                            <a class="fen-tan" href="javascript:;">导入</a>
+                        </div>
+                        <div class="batch_ming">
+                            仅限导入本班学生信息，导入的Excel模板<a href="javascript:;">点此下载</a>。请严格按照模板填写。
+                        </div>
+                    </div>   
+                </div>  
+                
+                <div class="daoru" style="display:none;">
+                	<div class="batch_main">
+                    	<div class="pipei">
+                            <div class="daoru-new">
+                                <span class="qiang progress"><i></i></span>
+                                <b></b>
+                            </div>
+                            <div class="daoru-size">
+                                信息匹配中，请稍后......
+                            </div>
+                        </div>
+                        
+                        <div class="cheng" style="display:none;">
+                            <div class="duoru-cheng clearfix">
+                                <div class="cheng-pic">
+                                    <img src="images/jiaowu/dui.png" width="46" height="46" />
+                                </div>
+                                <div class="cheng-size">
+                                    <p>恭喜您信息导入成功！</p>
+                                    <p>本次导入成功新增学生<i>800</i>人，匹配<i>780</i>人。</p>
+                                </div>
+                            </div>
+                            <div class="daoru-btn">
+                                <a class="daoru-sure" href="javascript:;">确认</a>
+                            </div>
+                        </div>
+                        
+                        <div class="shibai" style="display:none;">
+                            <div class="duoru-cheng clearfix">
+                                <div class="cheng-pic">
+                                    <img src="images/jiaowu/tan.png" width="46" height="46" />
+                                </div>
+                                <div class="cheng-size">
+                                    <p>您刚才选择导入的文件中存在如下问题：</p>
+                                    <p>
+                                        以下6条记录导入失败：
+                                        <br />
+                                        以下姓名的信息导入失败：
+                                        <br />
+                                         张三2、for42、liming2
+                                         <br />
+                                         黄45、何mei、赵六13
+                                    </p>
+                                    <p>本次导入成功新增学生<i>794</i>人，匹配<i>776</i>人。<br />导入失败的数据需要您修改后重新导入。</p>
+                                </div>
+                            </div>
+                            <div class="daoru-btn">
+                                <a class="daoru-sure" href="javascript:;">确认</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+                <div class="xuesheng" style="display:none;">
+                	<div class="edit_main">
+                    	<div class="rowwen clearfix">
+                        	<div class="edit_left">
+                            	<i>*</i><span>学生姓名：</span>
+                            </div>
+                            <div class="edit_right">
+                            	<input class="name" type="text" />
+                            </div>
+                        </div>
+                        <div class="rowwen clearfix">
+                        	<div class="edit_left">
+                            	<i>*</i><span>入学年份：</span>
+                            </div>
+                            <div class="question">
+                                <div class="select_box">
+                                    <span class="select_txt">2014</span><a class="xia" href="javascript:;"></a>
+                                    <div class="option">
+                                        <a class="current" href="javascript:;">2014</a>
+                                        <a href="javascript:;">2013</a>
+                                        <a href="javascript:;">2012</a>
+                                        <a href="javascript:;">2011</a>
+                                        <a href="javascript:;">2010</a>
+                                        <a href="javascript:;">2009</a>
+                                        <a href="javascript:;">2008</a>
+                                        <a href="javascript:;">2007</a>
+                                        <a href="javascript:;">2006</a>
+                                        <a href="javascript:;">2005</a>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="rowwen clearfix">
+                        	<div class="edit_left">
+                            	<i>*</i><span>年级信息：</span>
+                            </div>
+                            <div class="edit_right">
+                            	<span>高一</span>
+                            </div>
+                        </div>
+                        <div class="rowwen clearfix">
+                        	<div class="edit_left">
+                            	<i>*</i><span>所属班级：</span>
+                            </div>
+                            <div class="edit_right">
+                            	<span>2班</span>
+                            </div>
+                        </div>
+                        <div class="rowwen clearfix">
+                        	<div class="edit_left">
+                            	<span>分配卡号：</span>
+                            </div>
+                            <div class="edit_right">
+                            	<input class="num" type="text" />
+                            </div>
+                        </div>
+                        <div class="teach_btn">
+                        	<a class="tijiao" href="javascript:;">提交</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bianji" style="display:none;">
+                	<div class="edit_main">
+                    	<div class="rowwen clearfix">
+                        	<div class="edit_left">
+                            	<i>*</i><span>学生姓名：</span>
+                            </div>
+                            <div class="edit_right">
+                            	<input class="name" type="text" />
+                            </div>
+                        </div>
+                        <div class="rowwen clearfix">
+                        	<div class="edit_left">
+                            	<i>*</i><span>入学年份：</span>
+                            </div>
+                            <div class="question">
+                                <div class="select_box">
+                                    <span class="select_txt">2014</span><a class="xia" href="javascript:;"></a>
+                                    <div class="option">
+                                        <a class="current" href="javascript:;">2014</a>
+                                        <a href="javascript:;">2013</a>
+                                        <a href="javascript:;">2012</a>
+                                        <a href="javascript:;">2011</a>
+                                        <a href="javascript:;">2010</a>
+                                        <a href="javascript:;">2009</a>
+                                        <a href="javascript:;">2008</a>
+                                        <a href="javascript:;">2007</a>
+                                        <a href="javascript:;">2006</a>
+                                        <a href="javascript:;">2005</a>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="rowwen clearfix">
+                        	<div class="edit_left">
+                            	<i>*</i><span>年级信息：</span>
+                            </div>
+                            <div class="edit_right">
+                            	<span>高一</span>
+                            </div>
+                        </div>
+                        <div class="rowwen clearfix">
+                        	<div class="edit_left">
+                            	<i>*</i><span>所属班级：</span>
+                            </div>
+                            <div class="question">
+                                <div class="select_box">
+                                    <span class="select_txt">2班</span><a class="xia" href="javascript:;"></a>
+                                    <div class="option">
+                                        <a class="current" href="javascript:;">1班</a>
+                                        <a href="javascript:;">2班</a>
+                                        <a href="javascript:;">3班</a>
+                                        <a href="javascript:;">4班</a>
+                                        <a href="javascript:;">5班</a>
+                                        <a href="javascript:;">6班</a>
+                                        <a href="javascript:;">7班</a>
+                                        <a href="javascript:;">8班</a>
+                                        <a href="javascript:;">9班</a>
+                                        <a href="javascript:;">10班</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="rowwen clearfix">
+                        	<div class="edit_left">
+                            	<span>分配卡号：</span>
+                            </div>
+                            <div class="edit_right">
+                            	<input class="num" type="text" />
+                            </div>
+                        </div>
+                        <div class="teach_btn">
+                        	<a class="tijiao" id="submitBtn" href="javascript:;">提交</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="queren" style="display:none;">
+                	<div class="batch_main">
+                    	<div class="duoru-cheng clearfix">
+                            <div class="cheng-size">
+                            	<p>您即将删除该学生信息，删除不可恢复，是否确定？</p>   
+                            </div>
+                        </div>
+                        <div class="daoru-btn">
+                        	<a  href="javascript:;"></a>
+                            <a class="daoru-no" href="javascript:;"></a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+<script>	
+	/*//删除
+	$(document).on("click",".clear",function(){
+		var jqtr = $(this).closest("tr");
+		if(!confirm("是否删除？")) return ;
+		jqtr.slideUp(100,function(){jqtr.remove()});
+		});*/
+	
+	
+	//全选
+		$(document).on("click","#checkall",function () {//全选  
+			var jqthis = $(this);
+			$("#playList :checkbox").each(function(){
+				if($(this).attr("id") != "checkall" && jqthis.is(":checked") != $(this).attr("checked")) 
+					$(this).click();
+				})
+			/*$(document).on("click",".clear-more",function(){
+				if(!confirm("是否删除？")) return ;
+				var jqthis = $(this);
+				$("#playList :checkbox").each(function(index,element){
+				if($(element).attr("id") != "checkall" && $(element).is(":checked")) 
+					$(element).closest("tr").hide();
+				})
+			})*/
+		});  
+	 /*$("#checkall").click(
+		  function(){
+			if(this.checked){
+				$("input[name='checkname']").attr('checked', true)
+			}else{
+				$("input[name='checkname']").attr('checked', false)
+			}
+		  }
+		);
+*/
+	//下拉
+	$(document).ready(function(){
+	 $(document).on("click",".select_box",function(event){
+	 event.stopPropagation();
+	 $(this).find(".option").toggle();
+	$(this).parent().siblings().find(".option").hide();
+	});
+	$(document).on("click",function(event){
+	var eo=$(event.target);
+	if($(".select_box").is(":visible") && eo.attr("class")!="option" && !eo.parent(".option").length)
+	$('.option').hide();
+	});
+	/*赋值给文本框*/
+	$(document).on("click",".option a",function(){
+	var value=$(this).text();
+	$(this).parent().siblings(".select_txt").text(value);
+	$("#select_value").val(value)
+	})
+	})
+	
+	//进度条
+	var progress_node_class = "progress"; 
+		function SetProgress(progress) { 
+			if (progress) { 
+				$("." + progress_node_class + " > i").css("width", String(progress) + "%"); 
+				$("." + progress_node_class).next("b").html(String(progress) + "%"); 
+			} 
+		} 
+		var i = 0; 
+		function doProgress() { 
+			if (i > 100) { 
+				//alert("Progress Bar Finished!"); 
+				return; 
+			} 
+			if (i <= 100) { 
+				setTimeout("doProgress()", 100); 
+				SetProgress(i); 
+				i++; 
+			} 
+			if(i == 100){
+				$(".pipei").slideUp(0,function(){
+					$(".cheng").slideDown(0);	
+				});	
+			}
+		} 
+		$(document).ready(function() { 
+			doProgress(); 
+		}); 
+</script>
+</body>
+</html>

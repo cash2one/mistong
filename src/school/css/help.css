@@ -1,0 +1,112 @@
+.help{ width:1000px; margin:0 auto;}
+.help-search{ text-align:center; margin:15px 0 10px;}
+.help-search ul li{ position:relative;}
+.help-search ul li input{ width:523px; height:39px; line-height:39px; border:1px solid #8ac81b; color:#898989; font-size:13px; padding-left:20px; -moz-border-radius: 2px; /* Firefox */
+-webkit-border-radius: 2px; /* Safari 和 Chrome */
+border-radius: 2px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.help-search ul li a.search{ display:inline-block; width:80px; text-align:center; height:41px; line-height:41px; background:#8ac81b; z-index:99; position:absolute; right:228px; -moz-border-radius: 0 2px 2px 0; /* Firefox */
+-webkit-border-radius: 0 2px 2px 0; /* Safari 和 Chrome */
+border-radius: 0 2px 2px 0; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.help-search ul li a.search img{ padding:5px 0;}
+.help-search ul li span{ font-size:12px; font-weight:bold; color:#999;}
+.help-search ul li a{ color:#f39800; font-size:12px;}
+.help-main{ background:#f0f0f0; border:1px solid #dcdddd; margin-bottom:40px;}
+.help-main-left{ width:180px; float:left;}
+.help-main-left ul{ padding-top:15px;}
+.help-main-left ul li{ text-align:center; padding-top:10px;}
+.help-main-left ul li a{ color:#898989; font-size:14px; display:inline-block; width:100%; height:31px; line-height:30px;}
+.help-main-left ul li a.select{ background:url(../images/help/left-select.png) no-repeat; height:31px; line-height:30px; width:180px; color:#598f35;}
+.help-main-left ul li a:hover{ background:url(../images/help/left-select.png) no-repeat; height:31px; line-height:30px; width:180px; color:#598f35;}
+.help-main-right{ background:#fff; width:818px; float:left;}
+.help-right-title{ background:#fbfbfb; height:26px; line-height:26px; padding-left:18px;}
+.help-right-title a,.help-right-title span{ font-size:12px; color:#666;}
+.help-right-main{ padding:10px;}
+.automatic{ border:1px solid #f0f0f0; padding:5px 0 20px 10px; margin-bottom:20px; -moz-border-radius: 1px; /* Firefox */
+-webkit-border-radius: 1px; /* Safari 和 Chrome */
+border-radius: 1px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.automatic h3{ color:#f39800; font-size:16px; border-left:5px solid #8ac81b; padding-left:5px;}
+.automatic ul{ margin-top:18px;}
+.automatic ul li{ float:left; margin-left:45px;}
+.automatic ul li .help-safe{ background:#f0f0f0; border:1px solid #8ac81b; width:96px; text-align:center; margin-bottom:10px; margin-left:33px; -moz-border-radius: 6px; /* Firefox */
+-webkit-border-radius: 6px; /* Safari 和 Chrome */
+border-radius: 6px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.automatic ul li .help-order{ background:#f0f0f0; border:1px solid #8ac81b; width:96px; text-align:center; margin-bottom:9px; -moz-border-radius: 6px; /* Firefox */
+-webkit-border-radius: 6px; /* Safari 和 Chrome */
+border-radius: 6px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.automatic ul li .help-money{ background:#f0f0f0; border:1px solid #8ac81b; width:96px; text-align:center; margin-bottom:8px; margin-left:2px; -moz-border-radius: 6px; /* Firefox */
+-webkit-border-radius: 6px; /* Safari 和 Chrome */
+border-radius: 6px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.automatic ul li .help-idea{ background:#f0f0f0; border:1px solid #8ac81b; width:96px; text-align:center; margin-bottom:10px; -moz-border-radius: 6px; /* Firefox */
+-webkit-border-radius: 6px; /* Safari 和 Chrome */
+border-radius: 6px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.automatic ul li .help-safe img{ padding:14px 0 6px;}
+.automatic ul li .help-safe h4{ font-size:14px; color:#666; padding-bottom:10px;}
+.automatic ul li .help-order img{ padding:14px 0 6px;}
+.automatic ul li .help-order h4{ font-size:14px; color:#666; padding-bottom:10px;}
+.automatic ul li .help-money img{ padding:14px 0 6px;}
+.automatic ul li .help-money h4{ font-size:14px; color:#666; padding-bottom:10px;}
+.automatic ul li .help-idea img{ padding:14px 0 6px;}
+.automatic ul li .help-idea h4{ font-size:14px; color:#666; padding-bottom:10px;}
+.automatic ul li .help-size{ color:#999; font-size:12px; text-align:center;}
+.hot{ border:1px solid #f0f0f0; padding:5px 0 20px 10px; margin-bottom:20px; -moz-border-radius: 1px; /* Firefox */
+-webkit-border-radius: 1px; /* Safari 和 Chrome */
+border-radius: 1px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.hot h3{ color:#f39800; font-size:16px; border-left:5px solid #8ac81b; padding-left:5px;}
+.hot ul{ margin-top:10px;}
+.hot ul li{ color:#333; font-size:12px; height:25px; line-height:25px; float:left; margin-left:45px; margin-right:20px;}
+.comparison{ border-top:2px solid #f0f0f0; margin-bottom:20px; -moz-border-radius: 1px; /* Firefox */
+-webkit-border-radius: 1px; /* Safari 和 Chrome */
+border-radius: 1px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.comparison h3{ color:#f39800; font-size:16px; border-top:2px solid #f39800; padding:5px 10px 0; width:65px; margin-top:-2px;}
+.comparison ul{ margin:15px 0 15px 10px;}
+.comparison ul li{ float:left; border-right:1px dashed #b9de76; padding:12px 55px 12px 0;}
+.comparison ul li.comparisonLI-weima{ padding-left:55px;}
+.comparison ul li.comparisonLI-sine{ padding-left:55px; border-right:none; padding-right:0;}
+.comparison ul li .comparisonLI-pic{ float:left;}
+.comparison ul li .comparisonLI-size{ float:left; margin-left:15px; color:#999;}
+.comparison ul li .comparisonLI-size h5{ font-size:14px;}
+.comparison ul li .comparisonLI-size p{ font-size:12px;}
+
+/*搜索页*/
+.help-detail{ padding:25px 37px 48px 63px;}
+.help-detail h3{ color:#f39800; font-size:14px; font-weight:bold; border-left:5px solid #f39800; padding-left:7px;}
+.help-detail p{ font-size:12px; color:#666; font-weight:bold; padding-left:12px; margin-top:5px;}
+.help-detail ul li{ margin-top:30px;}
+.help-detail ul li h4 i{ background:url(../images/main/dian.png) no-repeat; width:4px; height:4px; display:inline-block; margin-right:5px; vertical-align:middle;}
+.help-detail ul li h4 span{ font-size:14px; color:#666; font-weight:bold;}
+.help-detail ul li p{ color:#666; font-size:12px;}
+.help-detail ul li p:hover{ color:#8ac81b;}
+
+/*新手指南*/
+.help-novice{ padding:50px 0 20px 15px;}
+.help-novice ul li{ margin-bottom:45px;}
+.help-novice ul li h4 i{ background:url(../images/main/dian.png) no-repeat; width:4px; height:4px; display:inline-block; margin-right:5px; vertical-align:middle;}
+.help-novice ul li h4 span{ font-size:16px; color:#595757;}
+.help-novice ul li p{ font-size:14px; color:#595757; margin:20px 0 0 10px;}
+.help-novice ul li .novice-zan{ text-align:right; margin-right:20px; margin-top:5px;}
+.help-novice ul li .novice-zan span{ background:url(../images/main/same-btn.png) no-repeat; margin-right:5px; width:83px; height:42px; line-height:42px; text-align:center; display:inline-block;}
+.help-novice ul li .novice-zan span a{ color:#666; font-size:12px; display:inline-block; width:100%; background:url(../images/main/i-detail.png) no-repeat;}
+.help-novice ul li .novice-zan span a:hover{ color:#8ac81b;}
+.help-novice ul li .novice-zan span.dianzan a{background-position:-3px -136px; padding-left:10px;}
+.help-novice ul li .novice-zan span.dianzan a:hover{background-position:-3px -184px; padding-left:10px;}
+.help-novice ul li .novice-zan span.chaping a{ background-position: -7px -60px; padding-left:10px;}
+.help-novice ul li .novice-zan span.chaping a:hover{ background-position: -6px -92px; padding-left:10px;}
+.novice-feed{ text-align:right; color:#8ac81b; font-size:12px; margin-right:20px; margin-top:5px; display:none;}
+.novice-feed a{ color:#e87640;}
+
+/*意见反馈*/
+.help-feed{ padding:50px 60px;}
+.help-feed ul li{ margin-bottom:20px;}
+.help-feed ul li h2{ color:#77b605; font-size:16px;}
+.help-feed ul li .discuss textarea{ width:682px; height:126px; color:#999; font-size:14px; border:1px solid #d6d6d6; padding:10px 0 0 10px; -moz-border-radius: 2px; /* Firefox */
+-webkit-border-radius: 2px; /* Safari 和 Chrome */
+border-radius: 2px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}
+.help-feed ul li .discuss span.c_length{ color:#999; font-size:14px; text-align:right; display:inline-block; width:100%;}
+.help-feed ul li .discuss span.c_length em{ font-style:normal;}
+.help-feed ul li .discuss span.c_failue{ font-size:14px; text-align:right; display:inline-block; width:100%; margin-top:5px;}
+.help-feed ul li input{ hegiht:28px; line-height:28px; border:1px solid #d6d6d6; width:562px; padding-left:10px;}
+.help-feed ul li i{ color:#666; font-size:14px; font-style:normal; height:28px; line-height:28px; width:112px; text-align:center; border:1px solid #d6d6d6; background:#f0f0f0; display:inline-block;}
+.help-feed ul li.feed-btn{ text-align:center;}
+.help-feed ul li a.name-btn{ font-size:18px; color:#fff; background:#f3981d; width:96px; height:38px; line-height:38px; text-align:center; display:inline-block; -moz-border-radius: 5px; /* Firefox */
+-webkit-border-radius: 5px; /* Safari 和 Chrome */
+border-radius: 5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */}

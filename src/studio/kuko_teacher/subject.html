@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/subject.js"></script>
+<script src="js/slide.js"></script>
+<title>编辑题目</title>
+</head>
+
+<body>
+	<div class="edit">
+    	<div class="edit-zong">
+        	<div class="edit-right">
+            	<div class="edit-title clearfix">
+                    <ul>
+                        <li>
+                        	<div class="new-add">
+                            	<a class="add" href="javascript:;">
+                                	<img src="images/index/add-timu.png" width="15" height="18" />新增题目
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="edit-btn">
+                	<a class="pre" href="javascript:;">上一页</a>
+                    <a class="next" href="javascript:;">下一页</a>
+                </div>
+            </div>
+            <div class="edit-left">
+            	<div class="left-title">
+                    <div class="page">
+                        <a rel="1" class="num complete" href="javascript:;">1</a>
+                        <a rel="2" class="num current" href="javascript:;">2</a>
+                        <a rel="3" class="num" href="javascript:;">3</a>
+                        <a rel="4" class="num" href="javascript:;">4</a>
+                        <a rel="5" class="num" href="javascript:;">5</a>
+                        <a rel="6" class="num" href="javascript:;">6</a>
+                        <a rel="7" class="num" href="javascript:;">7</a>
+                        <a rel="8" class="num" href="javascript:;">8</a>
+                        <a rel="10" class="num" href="javascript:;">....10</a>
+                        <a rel="2" class="nextPage" href="javascript:;">下一页</a>                  
+                    </div>
+                </div>
+                <div class="ck-slide">
+                	<ul class="ck-slide-wrapper">
+                    	<li>
+                        	<img src="images/index/timu.jpg" width="708" height="575" />
+                        </li>
+                        <li style="display:none">
+                        	<img src="images/index/timu.jpg" width="708" height="575" />
+                        </li>
+                        <li style="display:none">
+                        	<img src="images/index/timu.jpg" width="708" height="575" />
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ctrl-slide ck-prev">上一张</a> <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parts" style="display:none;">
+    	<div class="part asdasd-part">
+        	<ul>
+        		<li class="num-zong">
+                    <dl class="clearfix">
+                        <dd class="title">
+                            <h4>3-1</h4>
+                            <a class="close" href="javascript:;">x</a>
+                        </dd>
+                        <dd class="type clearfix">
+                            <span>题型：</span>
+                            <div class="question">
+                                <div class="select_box">
+                                    <span class="select_txt">单选题</span>
+                                    <a class="xia" href="javascript:;"></a>
+                                    <div class="option">
+                                        <a class="current danxuanti" tar=".num4" href="javascript:;">单选题</a>
+                                        <a class="duoxuanti" tar=".num4" href="javascript:;">多选题</a>
+                                        <a class="panduanti" tar=".bool" href="javascript:;">判断题</a>
+                                        <a class="qita" tar=".other" href="javascript:;">其他</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </dd>
+                        <dd class="number clearfix" data-choose="true">
+                            <span>选项个数：</span>
+                            <div class="question">
+                                <div class="select_box">
+                                    <span class="select_txt">4</span>
+                                    <a class="xia" href="javascript:;"></a>
+                                    <div class="option">
+                                        <a class="current" tar=".num3" href="javascript:;">3</a>
+                                        <a tar=".num4" href="javascript:;">4</a>
+                                        <a tar=".num5" href="javascript:;">5</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </dd>
+                        <dd class="clearfix ans">
+                            <span class="long">请提供正确答案：</span>
+                            <b name="a"><input type="checkbox" name="browser" value="a" />A</b>
+                            <b name="b"><input type="checkbox" name="browser" value="b" />B</b>
+                            <b name="c"><input type="checkbox" name="browser" value="c" />C</b>
+                            <b name="d"><input type="checkbox" name="browser" value="d" />D</b>
+                        </dd>
+                        
+                        <dd class="clearfix">
+                            <span>分值：</span>
+                            <input class="score" type="text" placeholder="10" />
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <div class="part bool">
+            <span class="long panduan">请提供正确答案：</span>
+            <b><input type="checkbox" name="browser" value="a" />对</b>
+            <b><input type="checkbox" name="browser" value="b" />错</b>
+        </div>
+        
+        <div class="part num3">
+                <span class="long">请提供正确答案：</span>
+                <b name="a"><input type="checkbox" value="a" name="browser">A</b>
+                <b name="b"><input type="checkbox" value="b" name="browser">B</b>
+                <b name="c"><input type="checkbox" value="c" name="browser">C</b>
+        </div>
+        <div class="part num4">
+                <span class="long">请提供正确答案：</span>
+                <b name="a"><input type="checkbox" value="a" name="browser">A</b>
+                <b name="b"><input type="checkbox" value="b" name="browser">B</b>
+                <b name="c"><input type="checkbox" value="c" name="browser">C</b>
+                <b name="d"><input type="checkbox" value="d" name="browser">D</b>
+            
+        </div>
+        <div class="part num5">
+                <span class="long">请提供正确答案：</span>
+                <b name="a"><input type="checkbox" value="a" name="browser">A</b>
+                <b name="b"><input type="checkbox" value="b" name="browser">B</b>
+                <b name="c"><input type="checkbox" value="c" name="browser">C</b>
+                <b name="d"><input type="checkbox" value="d" name="browser">D</b>
+                <b name="e"><input type="checkbox" value="e" name="browser">E</b>
+            
+        </div>
+    </div>
+<script>
+	//下拉
+    $(document).ready(function () {
+        $(document).on("click",".select_txt ,.xia", function (event) {
+            $(this).parent().find(".option").show().one("click", function (event) {
+                $(this).hide();
+            });
+        });
+        /*赋值给文本框*/
+        $(document).on("click", ".option a", function () {
+            var value = $(this).text();
+            $(this).parent().siblings(".select_txt").text(value);
+            $("#select_value").val(value);
+            var tar = $(this).attr("tar");
+			var jqnum = $(".parts .part" + tar).clone();
+			$(this).closest("li").find(".ans").html(jqnum);
+        });
+        $(document).on("click", ".option a.panduanti", function () {
+            $(this).parents('dl').find('.number').hide();
+        })
+        $(document).on("click", ".option a.danxuanti", function () {
+            $(this).parents('dl').find('.number').show();
+        })
+        $(document).on("click", ".option a.duoxuanti", function () {
+            $(this).parents('dl').find('.number').show();
+        })
+        $(document).on("click", ".option a.qita", function () {
+            $(this).parents('dl').find('.number').hide();
+        })
+    });
+	
+	$('.ck-slide').ckSlide({
+		dir: 'x'
+	});
+	
+	$(document).ready(function() {
+		var height1 = $(window).height(); 
+		var height2 = height1 - 40;
+		//alert(height2)
+		$(".edit-title").css("height",height2);
+		//alert(height2);
+	});
+</script>    
+</body>
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<title>kuko我要巡堂</title>
+</head>
+
+<body>
+	<div class="main">
+        <div class="content clearfix">
+        	<div class="w_left">
+            	<div class="lift">
+                	<h3><a href="javascript:;"><img src="images/index/user.png" width="79" height="79" /></a></h3>
+                	<ul>
+                    	<li><a class="home" href="index.html">首页</a></li>
+                        <li class="selected"><a class="xun" href="javascript:;">我要巡堂</a></li>
+                        <li><a class="culum" href="curriculum.html">课程管理</a></li>
+                        <li><a class="teach" href="teacher.html">教师管理</a></li>
+                        <li><a class="ban" href="class_stepfirst.html">班级管理</a></li>
+                        <li><a class="timetable" href="row_stepfirst.html">排课管理</a></li>
+                        <li><a class="analysis" href="analysis.html">教学分析</a></li>
+                        <li><a class="member" href="u_membercenter.html">个人中心(<span>4</span>)</a></li>
+                        <li><a class="help" href="javascript:;">使用帮助</a></li>
+                    </ul>
+                    <h4><a href="javascript:;"><img src="images/index/feedback.png" width="156" height="70" /></a></h4>
+                </div>
+            </div>
+            <div class="w_right">
+            	<div class="all">
+                	<div class="course clearfix">
+                		<h2>我的订单</h2>
+                    </div>
+                    <div class="wrap_back">
+                    	<div class="back_xun">
+                            <ul id="tags" class="clearfix">
+                                <li class="selectTag"><a onClick="selectTag('tagContent0',this)" href="javascript:void(0)">正在授课(10)</a></li>
+                                <li><a onClick="selectTag('tagContent1',this)" href="javascript:void(0)">即将开始(11)</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div id="tagContent">
+                        	<div class="selectTag tagContent" id="tagContent0" style="display:block;">
+                            	<div class="main_xun">
+                                	<ul class="clearfix">
+                                    	<li class="selected selectLi" id="l1">
+                                        	<a href="javascript:;">高三年级(3)</a>
+                                        </li>
+                                        <li class="line_xun"></li>
+                                        <li class="selectLi" id="l2">
+                                        	<a href="javascript:;">高二年级(3)</a>
+                                        </li>
+                                        <li class="line_xun"></li>
+                                        <li class="selectLi" id="l3">
+                                        	<a href="javascript:;">高一年级(4)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ke_xun">
+                                    <ul class="clearfix">
+                                        <li class="childli" id="i1" style="display:block;">
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">1班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">2班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">3班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">5班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">6班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">7班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">8班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">10班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">11班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">12班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                        <li id="i2" class="childli">
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">1班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">2班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">3班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">4班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">5班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">6班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">7班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">8班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">9班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">10班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">11班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">12班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                        <li id="i3" class="childli">
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">1班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">2班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">3班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">4班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">5班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">6班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">7班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">10班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">11班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="two">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="selectTag tagContent" id="tagContent1">
+                            	<div class="main_xun">
+                                	<ul class="clearfix">
+                                    	<li class="selected selectLi" id="t1">
+                                        	<a href="javascript:;">高三年级(3)</a>
+                                        </li>
+                                        <li class="line_xun"></li>
+                                        <li class="selectLi" id="t2">
+                                        	<a href="javascript:;">高二年级(3)</a>
+                                        </li>
+                                        <li class="line_xun"></li>
+                                        <li class="selectLi" id="t3">
+                                        	<a href="javascript:;">高一年级(4)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ke_xun">
+                                    <ul class="clearfix">
+                                        <li class="childli" id="h1" style="display:block;">
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">1班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">2班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">3班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">5班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">6班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">7班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">8班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">10班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">11班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">12班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                        <li id="h2" class="childli">
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">1班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">2班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">3班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">4班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">5班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">6班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">7班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">8班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">9班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">10班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">11班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">12班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                        <li id="h3" class="childli">
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">1班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">2班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">3班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">4班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                            	<dd>
+                                                    <a href="javascript:;">
+                                                        <p class="cu">5班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">6班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">7班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                            <dl class="clearfix">
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">10班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="there">(未进入)</span></p>
+                                                    </a>
+                                                </dd>
+                                                <dd>
+                                                	<a href="javascript:;">
+                                                        <p class="cu">11班  语文-古诗词专项专项专</p>
+                                                        <p>主讲老师：牛哥<span class="one">(正在讲课)</span></p>
+                                                    </a>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+	$('.btn').hover(
+	  function(){
+		$(this).addClass('btnHover');
+	  },
+	  function(){
+		$(this).removeClass('btnHover');
+	  }
+	);
+	
+	$('.btn').click(function(){
+	  $(this).addClass('btnGray');
+	});
+	//切换
+	function selectTag(showContent,selfObj){
+		var tag = document.getElementById("tags").getElementsByTagName("li");
+		var taglength = tag.length;
+		for(i=0; i<taglength; i++){
+			tag[i].className = "";
+		}
+		selfObj.parentNode.className = "selectTag";
+		
+		for(i=0; j=document.getElementById("tagContent"+i); i++){
+			j.style.display = "none";
+		}
+		document.getElementById(showContent).style.display = "block";
+	}
+	//下面切换
+	$(function(){
+		$(".selectLi").click(function(){
+			$(".selectLi").removeClass("selected");
+			$(this).addClass("selected");
+			var id = $(this).attr("id").substring(1);
+			$(".childli").css("display","none");
+			$("#i" + id).css("display","block");
+			$("#h" + id).css("display","block");
+		});	
+	});
+</script>
+</body>
+</html>

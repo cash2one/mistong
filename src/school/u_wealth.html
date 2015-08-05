@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/member.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/login.js" type="text/javascript"></script>
+<script src="js/flying.js" type="text/javascript"></script>
+<script src="js/xcConfirm.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/getDates.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/commer.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<title>个人中心-酷课学院</title>
+</head>
+
+<body>
+	<div class="commer">
+    	<div class="header clearfix">
+        	<div class="logo">
+                <a href="javascript:;">
+                    <img src="images/main/login.png" width="255" height="33" />
+                </a>
+            </div>
+            <div class="user">
+            	<ul class="clearfix">
+                	<li><span><img src="images/main/user-name.png" width="25" height="25" />张三，早上好！</span></li>
+                    <li class="line"></li>
+                    <li><a class="user-center" href="u_membercenter.html">个人中心</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="nav-zong" id="nav_main">
+        	<div class="nav">
+            	<ul>
+                	<li>
+                    	<div class="bm">
+                        	<div class="inner">
+                            	<span></span>
+                        		<a href="index.html">首页</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href="live.html">直播间</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href="demand.html">点播间</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href="college.html">学院派</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="bm">
+                        	<div class="inner">
+                    			<span></span>
+                                <a href=".">答疑派</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clsTitle" id="collectBox">
+                    <a class="lan" href="study-kong.html">
+                        学习篮子（<span>5</span>）
+                    </a>
+                    <div class="tan">
+                    	<p>您的学习篮子里已有<span>8</span>节课程，快去确认报名吧！</p>
+                        <a class="sure" href="study.html">确认报名</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+        	<div class="content-table">
+            	<div class="play-bread clearfix">
+                    <div class="bread-left">
+                        <a href="javascript:;">首页</a>
+                        <span>></span>
+                        <a href="u_membercenter.html">个人中心</a>
+                        <span>></span>
+                        <a href="javascript:;">我的财富</a>
+                    </div>
+                </div>
+                
+                <div class="user-zong clearfix">
+                	<div class="user-left">
+                    	<div class="user-sch">
+                            <h2><img src="images/main/user-school.png" width="10" height="14" />我的学院</h2>
+                            <div class="status clearfix">
+                                <div class="status-left">
+                                    <img src="images/main/user-pic.png" width="66" height="66" />
+                                </div>
+                                <div class="status-right">
+                                    <p>Angela</p>
+                                    <p>身份：学员</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mine">
+                        	<h2>我的成长记录</h2>
+                        	<ul>
+                                <li><a href="javascript:;">我的课表</a></li>
+                                <li><a href="u-order.html">我的订单(<span>1</span>)</a></li>
+                                <li><a href="javascript:;">我的圈子(<span>1</span>)</a></li>
+                                <li><a href="javascript:;">我的问答(<span>8</span>)</a></li>
+                                <li class="selected"><a href="javascript:;">我的财富</a></li>
+                                <li><a href="javascript:;">我的勋章</a></li>
+                                <li><a href="u-task.html">我的任务</a></li>
+                            </ul>
+                            <h2>我的个人资料</h2>
+                        	<ul>
+                                <li><a href="u-basic.html">基本资料</a></li>
+                                <li><a href="javascript:;">我的收藏(<span>8</span>)</a></li>
+                                <li><a href="javascript:;">我的评论</a></li>
+                                <li><a href="u-safe.html">账户安全</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="user-right">
+                        <div class="wealth">
+                        	<div class="wealth-head" id="tags">
+                            	<h2>我的酷币</h2>
+                            	<!--<ul>
+                                	<li class="selectTag"><a onClick="selectTag('tagContent0',this)" href="javascript:void(0)">我的酷币</a></li>
+                                    <li><a onClick="selectTag('tagContent1',this)" href="javascript:void(0)">我的积分</a></li>
+                                </ul>-->
+                            </div>
+                            
+                            <div id="tagContent">
+                    			<div class="selectTag tagContent" id="tagContent0" style="display:block;">
+                                	<div class="balance">
+                                    	<h3>酷币余额：<b>7</b></h3>
+                                        <ul>
+                                        	<li><a id="btn8" href="javascript:;">我要充值</a></li>
+                                            <li><a href="index.html">我要使用</a></li>
+                                            <li><a href="u-task.html">我要赚酷币</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="detailed">
+                                    	<h5>余额明细</h5>
+                                        <table>
+                                        	<tr>
+                                            	<th style="width:160px;">时间</th>
+                                                <th style="width:80px;">收入</th>
+                                                <th style="width:80px;">支出</th>
+                                                <th style="width:80px;">余额</th>
+                                                <th style="width:100px;">类型</th>
+                                                <th style="width:300px;">备注</th>
+                                            </tr>
+                                            <tr>
+                                            	<td>2014-12-03 11:30</td>
+                                                <td>2</td>
+                                                <td>5</td>
+                                                <td>13</td>
+                                                <td>兑换消费</td>
+                                                <td>订单号：12134567891011121314151617</td>
+                                            </tr>
+                                            <tr>
+                                            	<td>2014-12-03 11:30</td>
+                                                <td>2</td>
+                                                <td>5</td>
+                                                <td>13</td>
+                                                <td>兑换消费</td>
+                                                <td>订单号：12134567891011121314151617</td>
+                                            </tr>
+                                        </table>
+                                        <div class="my_order_footer clearfix">
+                                            <div class="pag_num">
+                                                第1-8条/共2条
+                                            </div>
+                                            <div class="pag_right">
+                                                <a class="nextPage" href="javascript:;">上一页</a>
+                                                <a href="javascript:;">第2页/共3页 </a>
+                                                <a class="nextPage" href="javascript:;">下一页</a>                  
+                                            </div>
+                                		</div>
+                                    </div>
+                                </div>
+                                <!--<div class="tagContent" id="tagContent1">
+                                	<div class="balance">
+                                    	<h3>酷币余额：<b>170</b></h3>
+                                        <ul>
+                                        	<li><a id="btn9" href="javascript:;">我要兑换</a></li>
+                                            <li><a href="javascript:;">积分获取和使用说明</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="detailed">
+                                    	<h5>余额明细</h5>
+                                        <table>
+                                        	<tr>
+                                            	<th style="width:160px;">时间</th>
+                                                <th style="width:80px;">收入</th>
+                                                <th style="width:80px;">支出</th>
+                                                <th style="width:80px;">余额</th>
+                                                <th style="width:100px;">类型</th>
+                                                <th style="width:300px;">备注</th>
+                                            </tr>
+                                            <tr>
+                                            	<td>2014-12-03 11:30</td>
+                                                <td>2</td>
+                                                <td>5</td>
+                                                <td>13</td>
+                                                <td>兑换消费</td>
+                                                <td>订单号：12134567891011121314151617</td>
+                                            </tr>
+                                            <tr>
+                                            	<td>2014-12-03 11:30</td>
+                                                <td>2</td>
+                                                <td>5</td>
+                                                <td>13</td>
+                                                <td>兑换消费</td>
+                                                <td>订单号：12134567891011121314151617</td>
+                                            </tr>
+                                        </table>
+                                        <div class="my_order_footer clearfix">
+                                            <div class="pag_num">
+                                                第1-8条/共2条
+                                            </div>
+                                            <div class="pag_right">
+                                                <a class="nextPage" href="javascript:;">上一页</a>
+                                                <a href="javascript:;">第2页/共3页 </a>
+                                                <a class="nextPage" href="javascript:;">下一页</a>                  
+                                            </div>
+                                		</div>
+                                    </div>
+                                </div>-->
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<!--充值-->
+		<div class="pop-content">
+        	<div class="recharge">
+            	<ul>
+                	<li>
+                    	<span>充值金额：</span>
+                        <input class="recharge-money" type="text" value="35" />元
+                    </li>
+                    <li>
+                    	<input class="choice" checked="checked" value="zfb" name="browser" type="radio" /><img src="images/main/zfb.png" width="73" height="23" />
+                        <input class="choice" value="wy" name="browser" type="radio" /><b>使用银行卡支付</b>
+                    </li>
+                </ul>
+                <div class="recharge_btn">
+                    <a href="javascript:;">立即充值</a>
+                </div>
+            </div>
+        </div>
+        
+        <!--兑换-->
+        <div class="pop-contentone">
+        	<div class="recharge">
+            	<ul>
+                    <li>
+                    	<i>酷币余额：15</i>
+                        1酷币=100积分
+                    </li>
+                    <li>
+                    	<span>兑换酷币数：</span>
+                        <input class="recharge-money" type="text" value="35" />=100积分
+                    </li>
+                </ul>
+                <div class="recharge_btn">
+                    <a href="javascript:;">立即充值</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="copyright">
+            	<ul>
+                	<li><img src="images/main/cnnic.png" width="127" height="47" /></li>
+                    <li><img src="images/main/hy_124x47.png" width="124" height="47" /></li>
+                	<li>
+                    	<p>Copyright © 2015  杭州狮说教育科技有限公司  版权所有   浙ICP备14032235号</p>
+                    	<p class="foot-li">
+                        	<img src="images/main/1.png" width="16" height="16" />客服电话：4000-136-070
+                        	<span><img src="images/main/2.png" width="14" height="17" />客服QQ群：374465304</span>
+                        </p>
+                    </li>
+                </ul>
+                <span></span>
+            </div>
+        </div>
+    </div>
+<script>
+//切换
+	function selectTag(showContent,selfObj){ 
+		var tag = document.getElementById("tags").getElementsByTagName("li");
+		var taglength = tag.length;
+		for(i=0; i<taglength; i++){
+			tag[i].className = "";
+		}
+		selfObj.parentNode.className = "selectTag";
+		
+		for(i=0; j=document.getElementById("tagContent"+i); i++){
+			j.style.display = "none";
+		}
+		document.getElementById(showContent).style.display = "block";
+	}
+	
+	$(function(){
+		$("#btn8").click(function(){
+		window.wxc.xcConfirm($(".pop-content").html(), window.wxc.xcConfirm.typeEnum.recharge);	
+		});
+	});
+	$(function(){
+		$("#btn9").click(function(){
+		window.wxc.xcConfirm($(".pop-contentone").html(), window.wxc.xcConfirm.typeEnum.exchange);	
+		});
+	});
+</script>
+</body>
+</html>

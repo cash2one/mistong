@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jQuery-jcDate.js" charset="utf-8"></script>
+<title>kuko班级管理</title>
+</head>
+
+<body>
+	<div class="main">     
+        <div class="content clearfix">
+        	<div class="w_left">
+            	<div class="lift">
+                	<h3><a href="javascript:;"><img src="images/index/user.png" width="79" height="79" /></a></h3>
+                	<ul>
+                    	<li><a class="home" href="index.html">首页</a></li>
+                        <li><a class="xun" href="xuntang.html">我要巡堂</a></li>
+                        <li><a class="culum" href="curriculum.html">课程管理</a></li>
+                        <li><a class="teach" href="teacher.html">教师管理</a></li>
+                        <li class="selected"><a class="ban" href="javascript:;">班级管理</a></li>
+                        <li><a class="timetable" href="row_stepfirst.html">排课管理</a></li>
+                        <li><a class="analysis" href="analysis.html">教学分析</a></li>
+                        <li><a class="member" href="u_membercenter.html">个人中心(<span>4</span>)</a></li>
+                        <li><a class="help" href="javascript:;">使用帮助</a></li>
+                    </ul>
+                    <h4><a href="javascript:;"><img src="images/index/feedback.png" width="156" height="70" /></a></h4>
+                </div>
+            </div>
+            <div class="w_right">
+            	<div class="all">
+                	<div class="course clearfix">
+                		<h2>班级管理</h2>  
+                    </div>
+                   	<div class="class_step">
+                    	<img src="images/jiaowu/class_step1.png" width="773" height="38" />
+                    </div>
+                    <div class="stepFirst">
+                    	<div class="Fitsttime clearfix">
+                            <div class="ban_time">
+                                选择开班时间：
+                            </div>
+                            <div class="cha_time">
+                                <input class="jcDate" type="text" /><span>至</span><input class="jcDate" type="text" />
+                            </div>
+                            <div class="shuo_time">
+                            	设定后，后面三步的设置将只在本时间段内有效。
+                            </div>
+                        </div>
+                        <div class="Fitsttime clearfix">
+                            <div class="ban_time">
+                                选择开班类别：
+                            </div>
+                            <div class="cha_type">
+                            	<input class="checkbox" type="checkbox" id="checkbox1" checked="false" /><input class="text" type="text" value="高三" />
+                            </div>
+                            <div class="ban_number">
+                                开班数量：
+                            </div>
+                            <div class="cha_type">
+                                <input class="text" type="text" placeholder="1" />
+                            </div>
+                        </div>
+                        <div class="Fitsttime clearfix">
+                            <div class="ban_time">
+                                选择开班年级：
+                            </div>
+                            <div class="cha_type">
+                            	<input class="checkbox" type="checkbox" id="checkbox1" checked="false" /><input class="text" type="text" value="高二 " />
+                            </div>
+                            <div class="ban_number">
+                                开班数量：
+                            </div>
+                            <div class="cha_type">
+                                <input class="text" type="text" placeholder="1" />
+                            </div>
+                        </div>
+                        <div class="Fitsttime clearfix">
+                            <div class="ban_time">
+                                选择开班年级：
+                            </div>
+                            <div class="cha_type">
+                            	<input class="checkbox" type="checkbox" id="checkbox1" checked="false" /><input class="text" type="text" value="高一" />
+                            </div>
+                            <div class="ban_number">
+                                开班数量：
+                            </div>
+                            <div class="cha_type">
+                                <input class="text" type="text" placeholder="1" />
+                            </div>
+                        </div>
+                        <div class="first_btn clearfix">
+                        	<a class="add" id="add" href="javascript:;">增加开班类别</a>
+                            <a class="first_next" href="class_stepsecond.html">下一步</a>
+                        </div>
+                     </div>
+                    
+                    <div class="first_prompt">
+                    	<h5>提示：</h5>
+                        <ul>
+                        	<li>1、<span>除了按固有的分年级分班授课形式外，还可以按照学校自身的需要来设定开班类别，如竞赛辅导班、社会实践班等。</span></li>
+                            <li>2、<span>在酷课上开设班级不一定要按照固有的班级设置，可以打破原有的班级开设方式，重新设定新的班级，如原来1个年级有10个班，这里可以设置成1个班级来授课，开班授课的形式可以多样化。</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+	//日期
+	$(function (){
+		$("input.jcDate").jcDate({					       
+				IcoClass : "jcDateIco",
+				Event : "click",
+				Speed : 100,
+				Left : 0,
+				Top : 28,
+				format : "-",
+				Timeout : 100
+		});
+	});
+	//checkbox默认勾选
+	function check()
+	  {
+	  document.getElementById("check1").checked=true
+	  }
+	function uncheck()
+	  {
+	document.getElementById("check1").checked=false
+	  }
+	//添加
+	var tempt = '<div class="Fitstadd clearfix"><div class="ban_time"></div>'+
+					'<div class="cha_type">'+
+						'<input class="checkbox" type="checkbox" />'+
+						'<input class="text1" type="text" placeholder="填写开班类别，如竞赛辅导" />'+
+					'</div><div class="ban_number">开班数量：</div>'+
+					'<div class="cha_type"><input class="text" type="text" placeholder="1" /></div></div>';
+				
+	$(document).ready(function(){
+	  $("#add").click(function(){
+		$(this).parent().before(tempt);
+	  });
+	});
+</script>
+</body>
+</html>

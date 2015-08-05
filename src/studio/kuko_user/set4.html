@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/set.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/login.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/addclear.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(function(){
+	$("input").addClear();
+  });
+</script>
+<title>个人设置4</title>
+</head>
+
+<body>
+	<div class="commer" id="wrapper">
+    	<div class="set_header">
+        	<h3>酷课--个人设置</h3>
+        	<a class="close" href="javascript:;"><img src="images/cha.png" width="12" height="10" /></a>
+        </div>
+        <div class="set_main clearfix">
+        	<h4 class="set_phone">你可以在此处留下你的手机号，方便我们开课前提醒你上课。(开课前十分钟，我们会以短信的方式及时提醒你上课啦~)</h4>
+            <ul>
+            	
+                <li class="zhao clearfix">
+                	<label class="qq"><b>*</b>您的手机号码为:</label>
+                    <input class="ming" id="phone" type="text" />
+                    <span class="cuo" id="error_phone" style=" color:#f3981d; display:none;">手机号码不能为空！</span>
+                </li>
+                <li class="zhao clearfix">
+                	<label class="qq"><b>*</b>验证码:</label>
+                    <input id="ma" class="code" type="text" />
+                    <a class="code_hover" href="javascript:;"></a>
+                    <a class="code_click" href="javascript:;">重新获取(58秒)</a>
+                    <span class="cuo" id="error_ma" style=" color:#f3981d; display:none;">验证码错误</span>
+                </li>
+            </ul>
+            <div class="next">
+                <a class="btn login_phone" href="javascript:;">下一步</a>
+                <a class="step" href="javascript:;">跳过此步骤</a>
+            </div>
+            <script>
+				$('.btn').hover(
+				  function(){
+					$(this).addClass('btnHover');
+				  },
+				  function(){
+					$(this).removeClass('btnHover');
+				  }
+				);
+				
+				$('.btn').click(function(){
+				  $(this).addClass('btnGray');
+				});
+			</script>
+        </div>
+        
+    </div>
+</body>
+</html>

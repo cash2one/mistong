@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+.set_header{ background:#7bbf00; height:40px; line-height:40px; border-radius:7px 7px 0 0; position:relative; width:100%;}
+.set_header h3{ color:#fff; font-size:18px; font-family:"黑体"; margin-left:25px; float:left;}
+.close{ position:absolute; top:15px; right:10px;}
+.close:hover{ background:#f3981d; width:40px; height:40px; top:0; right:0; border-radius:0 7px 0 0;}
+.close:hover img{ margin:15px 0 0 18px; display:inline-block;}
+.set_main{ background:#fff; border-radius:0 0 7px 7px; width:409px}
+.set_main h4{ padding:25px 20px 35px; color:#333; font-size:13px; line-height:25px;}
+.set_main ul li{ margin-left:25px; padding-bottom:15px;}
+.set_main ul li label{ color:#626262; font-size:14px; height:32px; line-height:32px; margin-right:10px; width:110px; text-align:right; float:left;}
+.set_main ul li label b{ color:#ff6100; margin-right:10px; font-size:16px; vertical-align:middle; margin-top:3px; display:inline-block;}
+.set_main ul li input.ming{ height:30px; line-height:30px; border:1px solid #adadad; width:230px; color:#666; font-size:14px; text-indent:0.5em; position:relative;}
+.set_main ul li input.ming:hover{ border:1px solid #6cb92b;}
+.set_main ul li span{ float:left; color:#626262; font-size:14px; height:32px; line-height:32px; display:block;}
+.set_main ul li .nan{ margin-right:30px;}
+.set_main ul li .nan input{ margin-right:5px; vertical-align:middle; margin-top:10px;}
+.set_main ul li .nv input{ margin-right:5px; vertical-align:middle; margin-top:10px;}
+.next{ padding-bottom:28px; margin-left:140px;}
+.next a.btn{ font-size:18px; background:#7bbf00; width:112px; height:40px; line-height:40px; text-align:center; display:inline-block; color:#fff; border-radius:5px;}
+.next a.btnHover{ background:#f3981d;}
+.next a.btnGray{ background-color:#db8612; width:113px; height:41px; line-height:41px;}
+.zhao_qd a{ color:#999; font-size:18px; right:10px; top:4px; line-height:20px; display:inline-block;}
+.zhao_qd a:hover{ background:#dadada; width:24px; height:24px; line-height:24px; text-align:center; margin-right:-4px; margin-top:-2px; display:inline-block;}
+.set_main ul li.zhao_name{ margin-left:25px; padding-bottom:20px;}
+.zhao_name a{ color:#999; font-size:18px; right:10px; top:4px; line-height:20px; display:inline-block;}
+.zhao_name a:hover{ background:#dadada; width:24px; height:24px; line-height:24px; text-align:center; margin-right:-4px; margin-top:-2px; display:inline-block;}
+.zhao_qq a{ color:#999; font-size:18px; right:10px; top:4px; line-height:20px; display:inline-block;}
+.zhao_qq a:hover{ background:#dadada; width:24px; height:24px; line-height:24px; text-align:center; margin-right:-4px; margin-top:-2px; display:inline-block;}
+.zhao a{ color:#999; font-size:18px; right:10px; top:4px; line-height:20px; display:inline-block;}
+.zhao a:hover{ background:#dadada; width:24px; height:24px; line-height:24px; text-align:center; margin-right:-4px; margin-top:-2px; display:inline-block;}
+.pass a{ color:#999; font-size:18px; right:10px; top:4px; line-height:20px; display:inline-block;}
+.pass a:hover{ background:#dadada; width:24px; height:24px; line-height:24px; text-align:center; margin-right:-4px; margin-top:-2px; display:inline-block;}
+.zhao_yan a{ color:#999; font-size:18px; right:10px; top:4px; line-height:20px; display:inline-block;}
+.zhao_yan a:hover{ background:#dadada; width:24px; height:24px; line-height:24px; text-align:center; margin-right:-4px; margin-top:-2px; display:inline-block;}
+
+/*个人设置2姓名*/
+.question{ position:relative; width:232px; float:left;}
+.set_main ul li span.select_txt { width:230px; height:30px; border:1px solid #a0a0a0; background:#fff; text-indent:1em; color:#626262; font-size:14px; cursor:pointer; display:inline-block; line-height:30px;}
+.set_main ul li span.select_txt:hover{ border:1px solid #6cb92b;}
+.set_main ul li span.select_txt:focus{border:1px solid #4096ee;}
+.xia{ position:absolute; right:10px; top:15px; background:url(../images/bottom.png) no-repeat; width:11px; height:7px;}
+.xia:hover{ background:url(../images/bottom_hover.png) no-repeat; width:24px; height:24px; top:6px; right:5px;}
+.question .select_box .option{ z-index:999; border:1px solid #6cb92b; top:0; height:auto;overflow:auto;position:absolute;background:#fff;display:none; width:230px;}
+.question .select_box .option a{ color:#666; font-family:"微软雅黑"; font-size:14px; text-indent:1em; display:inline-block; width:230px; height:30px; line-height:30px;}
+.question .select_box .option a:hover{ background:#eaf8d2; color:#989e8f; }
+.question .select_box .option a.current{ background:#eaf8d2; color:#989e8f;}
+
+/*个人设置3QQ*/
+.set_main h4.set_qq{ padding:24px 20px 30px; color:#333; font-size:13px; line-height:25px;}
+.set_main ul li.pass{height:79px; padding-bottom:0; margin-left:10px;}
+.set_main ul li label.qq{ color:#626262; font-size:14px; height:32px; line-height:32px; margin-right:10px; width:125px; text-align:right; float:left;}
+.set_main ul li span.cuo{ color:#626262; font-size:14px; height:20px; line-height:20px; margin-left:133px; display:inline-block; width:240px;}
+.next a.login_qq{ margin-left:5px;}
+.next a.step{ font-size:14px; color:#a7a7a7; vertical-align:middle; display:inline-block; margin:10px 0 0 30px;}
+.next a.step:hover{ text-decoration:underline;}
+
+/*个人设置3手机*/
+.set_main h4.set_phone{ padding:12px 20px 15px 20px; color:#333; font-size:13px; line-height:25px;}
+.set_main ul li input.code{ height:30px; line-height:30px; border:1px solid #adadad; width:128px; color:#666; font-size:14px; text-indent:0.5em;}
+.set_main ul li input.code:hover{ border:1px solid #6cb92b;}
+.next a.login_phone{ margin-left:20px;}
+.set_main ul li a.code_hover{ background:url(../images/code.png) no-repeat; width:97px; height:25px; margin-top:5px; display:inline-block; vertical-align:middle;}
+.set_main ul li a.code_hover:hover{ background:url(../images/code_hover.png) no-repeat;}
+.set_main ul li a.code_click{ background:url(../images/code_click.png) no-repeat; width:97px; height:25px; display:inline-block; vertical-align:middle; position:absolute; right:0; top:4px; display:none; color:#666666; font-size:13px; text-align:center; line-height:25px;}
+.set_main ul li.zhao{ margin-left:25px; padding-bottom:0; position:relative; height:53px;}
+
+/*找回密码-问题*/
+.set_main h4.set_question{ padding:24px 20px 60px; color:#333; font-size:13px; line-height:25px;}
+.next a.login_question{ margin-left:5px;}
+.pass_cuo{ width:222px; position:absolute; top:85px; left:90px; display:none;}
+.cuo_header{ width:100%; background:#7bbf00;}
+.cuo_header p{ height:30px; line-height:30px; color:#fff; padding-left:10px; font-size:16px; float:left}
+.close1{ color:#fff; float:right; margin:5px 8px 0 0; font-size:14px;}
+.close1:hover{ background:#f3981d; width:30px; height:30px; margin:0;}
+.close1:hover b{ margin:5px 0 0 11px; display:inline-block;}
+.cuo_main{ background:#fff; padding:20px 0 0 20px;}
+.cuo_main ul{ margin-bottom:10px;}
+.cuo_main ul li{ float:left;}
+.cuo_main ul li.jihui{ width:110px; color:#626262; font-size:14px; margin-left:25px;}
+.que{ padding-bottom:15px; margin-left:73px;}
+.que a.que_btn{ width:53px; height:25px; line-height:25px; text-align:center; border-radius:5px; display:inline-block; font-size:14px; background:#f0f0f0; color:#818181; border:1px solid #dedede;}
+.que a.que_btnHover{ background:#dfdfdf; color:#a4a4a4;}
+.que a.que_btnGray{ background:#cecece; height:54px; height:26px; line-height:26px;}
+.dian{ padding-bottom:15px; margin-left:73px; color:#7bbf00;}
+
+/*密码重置*/
+.set_main h4.tishi{ padding:0 20px 14px; color:#626262; font-size:13px; line-height:25px;}
+.set_main h4.tishi_qd{ padding:0 20px 6px; color:#626262; font-size:13px; line-height:25px;}
+.set_main ul li.zhao_qd{ margin-left:25px; padding-bottom:0; position:relative; height:60px;}
+.set_main ul li span.cuo_qd{color:#626262; background:url(../images/pass_qd.png) no-repeat; width:236px; height:31px; padding:3px 0 0 5px; font-size:14px;display:inline-block; z-index:99; position:absolute; top:27px; left:133px;}
+.sure{ padding-bottom:15px; margin-left:160px;}
+.sure a.btn{ font-size:18px; background:#7bbf00; width:112px; height:40px; line-height:40px; text-align:center; display:inline-block; color:#fff; border-radius:5px;}
+.sure a.btnHover{ background:#f3981d;}
+.sure a.btnGray{ background-color:#db8612; width:113px; height:41px; line-height:41px;}
+
+/*老师绑定手机*/
+.set_main h4.set_teacher{ padding:10px 20px; color:#333; font-size:13px; line-height:20px;}
+.set_main p{ line-height:18px;}
+.teacher_next{ padding-bottom:12px; margin-left:140px;}
+.teacher_next a.btn{ font-size:18px; background:#7bbf00; width:112px; height:40px; line-height:40px; text-align:center; display:inline-block; color:#fff; border-radius:5px;}
+.teacher_next a.btnHover{ background:#f3981d;}
+.teacher_next a.btnGray{ background-color:#db8612; width:113px; height:41px; line-height:41px;}
+.teacher_next a.login_phone{ margin-left:20px;}
+
+/*老师短信验证*/
+.set_main ul li label.shou{ color:#626262; font-size:14px; height:32px; line-height:32px; margin-right:10px; width:125px; text-align:left; float:left;}
+.set_main ul li a.code_cong{ background:url(../images/code_cong.png) no-repeat; width:97px; height:25px; display:inline-block; vertical-align:middle; position:absolute; right:0; top:4px; display:none;}
+.set_main h4.set_yan{ padding:30px 20px 20px; color:#333; font-size:13px; line-height:20px;}
+.set_main ul li.zhao_yan{ margin-left:25px; padding-bottom:0; position:relative; height:73px;}
+.yan_next{ padding-bottom:22px; margin-left:140px;}
+.yan_next a.btn{ font-size:18px; background:#7bbf00; width:112px; height:40px; line-height:40px; text-align:center; display:inline-block; color:#fff; border-radius:5px;}
+.yan_next a.btnHover{ background:#f3981d;}
+.yan_next a.btnGray{ background-color:#db8612; width:113px; height:41px; line-height:41px;}
+.yan_next a.login_phone{ margin-left:20px;}
+
+/*老师密码强度验证*/
+.rowElem{ margin-left:135px;} 
+.rowElem tr td{ height:5px; width:54px; display:inline-block; background:#ededed;}

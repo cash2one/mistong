@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/set.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/login.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/addclear.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(function(){
+	$("input").addClear();
+  });
+</script>
+<title>找回密码2</title>
+</head>
+<body>
+	<div class="commer" id="wrapper">
+    	<div class="set_header">
+        	<h3>酷课--密码重置</h3>
+        	<a class="close" href="javascript:;"><img src="images/cha.png" width="12" height="10" /></a>
+        </div>
+        <div class="set_main clearfix">
+        	<h4 class="set_phone">请设置新的登陆密码：</h4>
+            <ul>
+                <li class="zhao_qd clearfix">
+                	<label class="qq"><b>*</b>新密码:</label>
+                    <input class="ming" id="password" type="text" />
+                    <span class="cuo_qd" id="error_pwd" style=" display:none;">密码不能为空！</span>
+                </li>
+                <li class="zhao clearfix">
+                	<label class="qq"><b>*</b>确认新密码:</label>
+                    <input class="ming" id="repeat_pwd" type="text" />
+                    <span class="cuo" id="error_repeatPwd" style=" color:#f3981d; display:none;">重复密码不能为空！</span>
+                </li>
+            </ul>
+            <h4 class="tishi_qd">提醒：长度建议6-8位，以字母、数字、符号的组合为佳。</h4>
+            <div class="sure">
+                <a class="btn login_setPwd" href="javascript:;">确定</a>
+            </div>
+            <script>
+				$('.btn').hover(
+				  function(){
+					$(this).addClass('btnHover');
+				  },
+				  function(){
+					$(this).removeClass('btnHover');
+				  }
+				);
+				
+				$('.btn').click(function(){
+				  $(this).addClass('btnGray');
+				});
+			</script>
+        </div>
+        
+    </div>
+</body>
+</html>

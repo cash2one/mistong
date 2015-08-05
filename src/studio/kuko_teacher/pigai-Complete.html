@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/commer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/slide.js"></script>
+<title>批改完成</title>
+</head>
+
+<body>
+	<div class="edit">
+    	<div class="edit-zong">
+        	<div class="edit-right">
+            	<div class="edit-complete clearfix">
+                	<div class="results">
+                    	<p>学生姓名：<span>王晓飞</span></p>
+                        <p>学生成绩：<span>90</span></p>
+                    </div>
+                    <div class="ahead">
+                    	<p>还有3名同学还没批改哦~</p>
+                        <a href="javascript:;">继续批改</a>
+                    </div>
+                </div>
+            </div>
+            <div class="edit-left">
+            	<div class="left-title">
+                    <div class="name-work">
+                        <h4>王晓飞</h4>
+                    </div>
+                    <div class="page">
+                        <a rel="1" class="num complete" href="javascript:;">1</a>
+                        <a rel="2" class="num current" href="javascript:;">2</a>
+                        <a rel="3" class="num" href="javascript:;">3</a>
+                        <a rel="4" class="num" href="javascript:;">4</a>
+                        <a rel="5" class="num" href="javascript:;">5</a>
+                        <a rel="6" class="num" href="javascript:;">6</a>
+                        <a rel="7" class="num" href="javascript:;">7</a>
+                        <a rel="8" class="num" href="javascript:;">8</a>
+                        <a rel="10" class="num" href="javascript:;">....10</a>
+                        <a rel="2" class="nextPage" href="javascript:;">下一页</a>                  
+                    </div>
+                </div>
+                <div class="ck-slide">
+                	<ul class="ck-slide-wrapper">
+                    	<li>
+                        	<img src="images/index/timu.jpg" />
+                        </li>
+                        <li style="display:none">
+                        	<img src="images/index/timu.jpg" />
+                        </li>
+                        <li style="display:none">
+                        	<img src="images/index/timu.jpg"  />
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ctrl-slide ck-prev">上一张</a> 
+                    <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+	$('.ck-slide').ckSlide({
+		dir: 'x'
+	});
+	$(document).ready(function() {
+		
+		//alert(height2)
+		
+		//alert(height2);
+		var height1 = $(window).height();
+		var height2 = height1 - 1;
+		var width1 = $(window).width(); 
+		var width2 = width1 - 270;
+		var height3 = $(".ck-slide img").height();
+		var h = (height1-height3)/2;
+		//alert(height3)
+		$(".edit-complete").css("height",height2);
+		$(".ck-slide img").css("margin-top",h>0?h:0);
+		//$(".ck-slide").css("width",width2);
+		$(".ck-slide").css("height",height1);
+		//alert(height2);
+		$('.ck-slide-wrapper li').css("width",width2);
+	});
+</script>
+</body>
+</html>
