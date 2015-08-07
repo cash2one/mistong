@@ -189,3 +189,17 @@
 .backc9{ background-color:#5B5B00;}
 .backc10{ background-color:#ff9966;}
 .backc11{ background-color:#669999;}
+
+.arrow1{
+    position: relative;
+}
+.arrow1 span{
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #ccc;
+    content: "";
+    right: -13px;
+    position: absolute;
+    top: 3px;
+}
+
