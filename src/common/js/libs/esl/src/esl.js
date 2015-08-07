@@ -1340,20 +1340,3 @@ var esl;
         esl = globalRequire;
     }
 })(this);
-
-
-var d=(function (a) {
-    return function (aa) {
-        return function (bb){
-            return function (cc){
-                return function(dd){
-                    return function (){
-                        console.log(aa+bb+cc+dd+" in return dd");
-                    }
-                }
-            }
-        }
-    }
-})(this)("123")("456")("789")("ddd");
-
-d();

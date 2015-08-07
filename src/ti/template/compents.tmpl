@@ -2,13 +2,16 @@
 
 <link rel="stylesheet" type="text/css" href="/src/ti/css/compents.css">
 
+g- 开头,普遍是通用组件
+
 <h4>组件</h4>
-<h5>按钮</h5>
+<h5>按钮:g-btn</h5>
 <ul>
 	<li>hover</li>
 </ul>
 <div class="states g-btn">
-    <a href="javascript:;">按钮一</a>
+	<button type="button">按钮一</button>
+    <!-- <a href="javascript:;">按钮一</a> -->
 </div>
 <pre>
 <code class="html">
@@ -16,9 +19,67 @@
 <div class="states g-btn">
     <a href="javascript:;">按钮一</a>
 </div>
+<!-- g-btn 自动将此dom结构认知为按钮 -->
+<!-- 添加或修改颜色对应class的颜色 -->
+<!-- 添加或修改文字大小对应class的文字大小样式 -->
+<div class="g-btn gray fs12">
+	<span class="normal">按钮二</span>
+</div>
+<!-- 用于一般情况下的按钮 -->
+<div class="g-btn gray fs12">
+	<span class="normal" >span模拟按钮</span>
+</div>
+<br>
+<!-- 用于a标签按钮,点击后可设置跳转 -->
+<div class="g-btn red">
+	<a href="javascript:;;" class="normal">标签形态按钮</a>
+</div>
+<!-- 可用于form表单中的按钮,设置type="submit"或其他请自行修改 -->
+<div class="g-btn gray fs12">
+	<button class="normal"  type="button" >按钮二</button>
+</div>
+
+
 /@escape}
 </code>
 </pre>
+
+<div class="g-btn gray fs12">
+	<span class="normal" >测试</span>
+</div>
+<br>
+<div class="g-btn red">
+	<a href="javascript:;;" class="normal">标签形态按钮</a>
+</div>
+
+<div class="g-btn dash">
+	<span class="normal" >红色按钮</span>
+</div>
+
+<div class="g-btn gray fs12">
+	<button class="normal"  type="button">按钮二</button>
+</div>
+
+<div class="g-btn">
+	<span class="circle">圆圈</span>
+</div>
+
+<div class="page2">
+	<div class="center">
+		<span class="g-btn gray">
+			<a href="/index" class="normal">回首页</a>
+		</span>
+		<div class="g-btn">
+			<span class="circle">圆圈</span>
+		</div>
+	</div>
+</div>
+
+<div class="g-btn">
+	<a href="/button" class="normal gray">去按钮</a>
+</div>
+
+
 
 <ul>
 	<li>css3实现细腻按钮</li>
