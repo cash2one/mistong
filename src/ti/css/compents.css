@@ -2,83 +2,61 @@
 a,input,button{ outline:none; }
 ::-moz-focus-inner{border:0px;}
 /*1*/
-/*.g-btn a{
-	color: #fff;
-	font-size: 12px;
-	width: 60px;
-	height: 20px;
-	line-height: 20px;
-	text-align: center;
-	background: #7bbf00;
-	border-radius: 5px;
-	display:inline-block;
-}*/
-.g-btn a:hover{
-	background: #f3981d;
-}
-.button.gray {
-	background: #7bbf00;
-}
 .g-btn{
     display: inline-block;
 }
-/*.g-btn span{
-    width: 100%;
-    padding: 10px;
-    height: 100%;
-    cursor: pointer;
-    display: inline-block;
-}*/
-.g-btn .normal{
-    background: #aaa;
-    display: inline-block;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
+.g-btn button{
+    border:none;
 }
-
-.g-btn span{
+.g-btn .one{
+	width: 60px;
+	height: 20px;
+	line-height: 20px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius: 5px;
     display: inline-block;
 }
-.g-btn .normal:hover{
-    background-color: red;
+.g-btn .one:hover{
+	background: #f3981d;
+    color: #fff;
 }
-.g-btn .circle{
-    border-radius: 25px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: red;
+.g-btn .two{
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius: 5px;
+    display: inline-block;
     cursor: pointer;
 }
-.center{
-    width: 300px;
-    margin:0 auto;
+.g-btn .two:hover{
+    color: #fff;
 }
-.red{
-     background-color: red;
+.g-btn .there{
+    -moz-border-radius: 7px;
+    -webkit-border-radius:7px;
+    -o-border-radius:7px;
+    border-radius: 7px;
+    display: inline-block;
+    cursor: pointer;
 }
-.dash{
-     background-color: #ccc;
+.g-btn .two:hover{
+    color: #fff;
 }
-.gray{
-    background-color: #B06464; 
+.g-btn .four{
+    -moz-border-radius: 5px;
+    -webkit-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
 }
-
-
-.fs12{
-    font-size: 12px;
-}
-.fs14{
-    font-size: 14px;
-}
-.page2{
-    margin: 0 auto;
-}
-.page2 .g-btn {
-    width: auto;
-    margin: 0 auto;
+.g-btn .four:hover{
+    background: #f39800;
 }
 
 /*2*/
@@ -87,7 +65,6 @@ a,input,button{ outline:none; }
     width: 60px;
 	height: 20px;
 	line-height: 20px;
-	text-align: center;
     cursor: pointer;
     opacity: 0.9;
     color: #FFF;
