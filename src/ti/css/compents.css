@@ -135,7 +135,7 @@ a,input,button{ outline:none; }
 /*3*/
 .all{ margin:20px auto; width:1010px; height:70px;}
 .all .bll{width:70px; height:70px; float:left; margin-left:10px;}
-.all .bll .list{ width:50px; height:50px; -moz-border-radius:10px;border-radius:10px;cursor:pointer;margin:0px auto; margin-top:10px;line-height:50px; text-align:center;color:White; font-weight:500; font-size:18px;}
+.all .bll .list{ width:50px; height:50px; -moz-border-radius:10px;border-radius:10px;cursor:pointer;margin:0px auto; margin-top:10px;line-height:50px;color:White; font-weight:500;}
 .all .bll .backc1:hover{ 
 	-webkit-border-radius:50px;
 	-moz-border-radius:50px;
