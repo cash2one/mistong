@@ -44,3 +44,9 @@ router.reg("/framework", function (req, res) {
     })
 });
 
+router.reg("/react",function(req,res){
+    courlene(baseTmpl+"react.tmpl", {}, function (star) {
+        res.write(star);
+        res.end();
+    })
+})

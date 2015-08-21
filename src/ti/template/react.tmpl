@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="src/common/js/libs/react/react.js"></script>
+    <script src="src/common/js/libs/react/JSXTransformer.js"></script>
+    <script type="text/javascript" src="/src/common/js/libs/jquery/dist/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/src/ti/favicon.ico" />
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/jsx">
+      React.render(
+        <h1 id="hello">Hello, world!</h1>,
+        document.getElementById('example')
+      );
+      $(function(){
+    		$("#hello").on("click",function  (argument) {
+    			// body...
+    			$(this).html("Hahaha!")
+    		})
+    	})
+    </script>
+  
+  </body>
+</html>
